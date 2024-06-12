@@ -2,42 +2,215 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#fff" class="theme-color" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta name="theme-color" content="#fff" class="theme-color" />
+    <title>Loading...</title>
+    <meta
+      name="description"
+      content="Self Developed personal website build with React.js"
+    />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Saahil" />
+    <meta
+      itemprop="description"
+      content="Self Developed personal website build with React.js"
+    />
+    <meta
+      itemprop="image"
+      content="https://raw.githubusercontent.com/soumyajit4419/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK"
+    />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://saahild.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Saahil" />
+    <meta
+      property="og:description"
+      content="Self Developed personal website build with React.js"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/soumyajit4419/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Saahil" />
+    <meta
+      name="twitter:description"
+      content="Self Developed personal website build with React.js"
+    />
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/soumyajit4419/Portfolio/master/Images/readme-img.png?token=AK7VCIF5RYEUZZAURELPTAC76U6AK"
+    />
+    <!-- <script async src="https://ackee.saahild.com/tracker.js" data-ackee-server="https://ackee.saahild.com" data-ackee-domain-id="c082bd15-f9d8-414f-aa10-926e1d66a5d6" data-ackee-opts='{ "ignoreOwnVisits": false, "detailed": true }'></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   </head>
+  <!-- <script type="text/javascript">
+    atOptions = {
+      'key' : '71dc240529bf37dbe2cda5bd015d6e4d',
+      'format' : 'iframe',
+      'height' : window.innerHeight,
+      'width' : window.innerWidth,
+      'params' : {}
+    };
+  </script> -->
+  <!-- <script src="ad.js"></script> -->
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+   
+    <noscript>
+      <META HTTP-EQUIV="refresh" CONTENT="15">
+        <style>
+          /* body {font-family: Arial, Helvetica, sans-serif;} */
+          /* The Modal (background) */
+          .my-modal {
+            display: none;
+            position: fixed; /* Stay in place */
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: #1e1e2e; /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+            -webkit-animation-name: fadeIn; /* Fade in the background */
+            -webkit-animation-duration: 0.4s;
+            animation-name: fadeIn;
+            animation-duration: 0.4s;
+          }
+    
+          /* Modal Content */
+          .my-modal-content {
+            position: fixed;
+            color: #cdd6f4;
+            bottom: 0;
+            background-color: #313244;
+            width: 100%;
+            -webkit-animation-name: slideIn;
+            -webkit-animation-duration: 0.4s;
+            animation-name: slideIn;
+            animation-duration: 0.4s;
+          }
+    
+          /* The Close Button */
+          .my-close {
+            color: #cba6f7;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+          }
+    
+          .my-close:hover,
+          .my-close:focus {
+            color: #f5c2e7;
+            text-decoration: none;
+            cursor: pointer;
+          }
+    
+          .my-modal-header {
+            padding: 2px 16px;
+            background-image: linear-gradient(
+              to left,
+              #1e1e2e,
+              #11111b
+            );
+              /*#5cb85c */;
+            color: white;
+          }
+    
+          .my-modal-body {
+            padding: 2px 16px;
+          }
+    
+          .my-modal-footer {
+            padding: 2px 16px;
+            /* bottom: 0; */
+            /* position: absolute; */
+            /* right: 50%; */
+            /* background-color: #5cb85c; */
+            background-repeat: repeat-x;
+            background-image: linear-gradient(
+              to left,
+              #1e1e2e,
+              #11111b
+            );
+            color: #cdd6f4;
+          }
+    
+          /* Add Animation */
+          @-webkit-keyframes slideIn {
+            from {
+              bottom: -300px;
+              opacity: 0;
+            }
+            to {
+              bottom: 0;
+              opacity: 1;
+            }
+          }
+    
+          @keyframes slideIn {
+            from {
+              bottom: -300px;
+              opacity: 0;
+            }
+            to {
+              bottom: 0;
+              opacity: 1;
+            }
+          }
+    
+          @-webkit-keyframes fadeIn {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+    
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+          a {
+        color: #89b4fa;
+    }
+    a:hover {
+        color: #b4befe;
+    }
+    a:visited {
+        color: #cba6f7;
+    }
+        </style>
+      <div class="my-modal-content" style="height: 100vh;">
+        <div class="my-modal-header">
+          <span class="my-close"><a href="/">&times;</a> </span>
+          <h2>Please enable javascript</h2>
+        </div>
+        <div class="my-modal-body" style="height: 85vh;">
+          <p>You need to enable JavaScript to run this app.</p>
+        </div>
+        <div class="my-modal-footer">
+          <h3>Reload page once you have enabled javascript or click <a href="/">here</a></h3>
+        </div>
+      </div>
+    </noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+   
   </body>
 </html>
