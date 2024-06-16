@@ -6,15 +6,22 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Background from './bg/main';
 import { injectOneko } from './scripts/oneko';
+import Navbar from './components/navbar';
+import { runTitle } from './scripts/title';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+document.title = "Saahild.com"
 injectOneko();
+runTitle()
 document.title = 'React App';
 root.render(
   <React.StrictMode>
     <Background />
+
+      <Navbar />
     <App />
+
   </React.StrictMode>
 );
 

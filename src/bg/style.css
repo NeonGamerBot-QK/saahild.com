@@ -29,7 +29,7 @@
 .background {
     position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     top: 0;
     left: 0;
     margin: 0;
@@ -37,8 +37,28 @@
     overflow: hidden;
  /* @apply bg-base-300;  */
  /* @apply bg-gradient-to-b from-ctp-mantle to-ctp-crust; */
- background: linear-gradient( var(--mantle), var(--crust));
+ /* BG CURNHBF */
+ /* background: linear-gradient( var(--mantle), var(--crust)); */
  /* backdrop-filter: blur(10px); */
+ /* background: linear-gradient(300deg,#222,var(--crust)); */
+ /* background-size: 180% 180%; */
+ /* animation: gradient-animation 18s ease infinite; */
+  }
+  html,body {
+    background: linear-gradient(300deg,#222,var(--crust));
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 .background li {
     position: absolute;

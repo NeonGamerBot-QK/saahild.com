@@ -1,0 +1,1 @@
+import icons from https://github.com/catppuccin/vscode-icons/tree/main/icons/mocha

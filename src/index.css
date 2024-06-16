@@ -29,7 +29,20 @@
   --base: #1e1e2e;
   --mantle: #181825;
   --crust: #11111b;
-  }   
+  }  
+  .text-highlight {
+    color: var(--mauve);
+    /* color: linear-gradient(var(--mauve), var(--mantle); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    @apply ease-in duration-500;
+ 
+  } 
+  .text-highlight:hover {
+    background: linear-gradient(var(--mauve), var(--yellow));
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

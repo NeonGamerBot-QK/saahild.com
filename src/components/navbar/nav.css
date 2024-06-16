@@ -1,0 +1,4 @@
+.nav-links {
+    font-size:medium;
+    @apply font-bold;
+}
