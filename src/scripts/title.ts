@@ -6,10 +6,13 @@ export function runTitle() {
         if(document.title !== 'Come Back :(') {
             title0 = document.title
         }
+        window.document.documentElement.className = "duration-500 ease-in-out "
         if (document.hasFocus()) {
           document.title = title0 || "Saahild.com"
+          window.document.documentElement.style.filter = ""
         } else {
           document.title = 'Come Back :('
+          window.document.documentElement.style.filter = "blur(30px)"
         }
       }, 200)
         
