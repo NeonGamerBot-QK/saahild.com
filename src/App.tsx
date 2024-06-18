@@ -10,14 +10,14 @@ import AboutPage from './components/AboutPage'
 
 function App () {
   return (
-   <HashRouter>
-     <Route path={"#/"} index component={<div style={{ zIndex: 9999 }}>
-      <Main />
-      <InfogramBelowMain />
-      <br />
-    </div>}/>
-    <Route path='#/about' component={<AboutPage />}/>
-   </HashRouter>
+    <HashRouter>
+      <Route path={'#/'} index component={<div style={{ zIndex: 9999 }}>
+        <Main />
+        <InfogramBelowMain />
+        <br />
+      </div>} />
+      <Route path='#/about' component={<AboutPage />} />
+    </HashRouter>
   )
 }
 
