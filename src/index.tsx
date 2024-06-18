@@ -8,12 +8,14 @@ import Background from './bg/main';
 import { injectOneko } from './scripts/oneko';
 import Navbar from './components/navbar';
 import { runTitle } from './scripts/title';
+import { startEvent } from './scripts/hashevent';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 document.title = "Saahild.com"
 injectOneko();
 runTitle()
+startEvent()
 document.title = 'React App';
 root.render(
   <React.StrictMode>

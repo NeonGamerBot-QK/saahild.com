@@ -1,5 +1,7 @@
 let title0: null | string = null
 let interId: any = null
+const isDev = process.env.NODE_ENV !== 'production'
+
 export function runTitle() {
     if(interId) clearInterval(interId)
    interId =  setInterval(() => {
@@ -12,7 +14,7 @@ export function runTitle() {
           window.document.documentElement.style.filter = ""
         } else {
           document.title = 'Come Back :('
-          window.document.documentElement.style.filter = "blur(30px)"
+if(!isDev)          window.document.documentElement.style.filter = "blur(30px)"
         }
       }, 200)
         

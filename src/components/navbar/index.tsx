@@ -1,9 +1,12 @@
 import "./nav.css"
+import Icon from '@mdi/react';
+import CustomIcon from "../static/Icons"
+import { mdiAccountCircle, mdiAccountBox } from '@mdi/js';
 function NavLinks() {
 return <>
-<li><a>About</a></li>
-        <li><a>Projects</a></li>
-<li><a>Contact</a></li>
+<li><a href="#/about"><Icon path={mdiAccountCircle} size={1} color={"var(--mauve)"}/> About</a></li>
+        <li><a href="#/projects"><CustomIcon icon={window.location.hash === "#/projects" ? "CloudFolderOpen" : "CloudFolder" }/> Projects</a></li>
+<li><a href="#/contact"><Icon path={mdiAccountBox} size={1} color={"var(--mauve)"}/> Contact</a></li>
 </>
 }
 export default function Navbar() {
@@ -17,7 +20,7 @@ export default function Navbar() {
        <NavLinks />
       </ul>
       </div>
-      <a className="btn btn-ghost text-xl">saahild.com</a>
+      <a className="btn btn-ghost text-xl" href="#">saahild.com</a>
     
       <div className="navbar-center hidden lg:flex">
       <ul className="menu menu-horizontal px-1 nav-links">
