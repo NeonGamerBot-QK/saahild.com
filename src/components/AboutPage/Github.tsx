@@ -1,6 +1,7 @@
+import './skillset.css'
 export default function GithubStats () {
-  return <div>
-    <h1 className='project-heading font-bold text-2xl ' style={{ paddingBottom: '20px' }}>
+  return <div className='text-center items-center'>
+    <h1 className='project-heading font-bold text-2xl' style={{ paddingBottom: '20px' }}>
         Days I <strong className='text-highlight'>Code</strong>
     </h1>
     {/* <GitHubCalendar
@@ -11,6 +12,6 @@ export default function GithubStats () {
         fontSize={16}
       /> */}
     {/* svg from git, updated every 3 hours */}
-    <img src='https://raw.githubusercontent.com/NeonGamerBot-QK/NeonGamerBot-QK/output/github-contribution-grid-snake.svg' />
+    <img src='https://raw.githubusercontent.com/NeonGamerBot-QK/NeonGamerBot-QK/output/github-contribution-grid-snake.svg'  className='ms-auto me-auto'/>
   </div>
 }

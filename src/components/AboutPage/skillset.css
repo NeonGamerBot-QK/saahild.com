@@ -3,12 +3,14 @@
     margin: 15px !important;
     padding: 10px !important;
     opacity: 0.93 !important;
-    border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+    /* rgba(200, 137, 230, 0.637)  */
+    border: 1.7px solid rgba(203, 166, 247, 0.637) !important;
     vertical-align: middle !important;
     text-align: center !important;
     border-radius: 5px !important;
     display: table !important;
-    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+    /* rgba(89, 4, 168, 0.137) */
+    box-shadow: 4px 5px 4px 3px rgba(49, 50, 68, 0.137) !important;
     overflow: hidden !important;
     transition: all 0.4s ease 0s !important;
   }
@@ -22,10 +24,16 @@
   .tech-icons:hover {
     transform: scale(1.05) !important;
     overflow: hidden !important;
-    border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+    /* rgba(197, 115, 230, 0.883) */
+    border: 2.2px solid rgba(203, 166, 247, 0.883) !important;
   }
   .tech-icon-images {
     padding: 20px !important;
     line-height: 1.6 !important;
   }
-  
+  .project-heading {
+    color: var(--text) !important;
+    font-size: 2.3em !important;
+    font-weight: 500 !important;
+    padding-top: 10px !important;
+  }

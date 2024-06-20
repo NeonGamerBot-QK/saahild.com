@@ -9,6 +9,7 @@ import { injectOneko } from './scripts/oneko';
 import Navbar from './components/navbar';
 import { runTitle } from './scripts/title';
 import { startEvent } from './scripts/hashevent';
+import { listenForEasterEgg } from './scripts/oneko_easteregg';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -16,6 +17,7 @@ document.title = "Saahild.com"
 injectOneko();
 runTitle()
 startEvent()
+listenForEasterEgg()
 document.title = 'React App';
 root.render(
   <React.StrictMode>

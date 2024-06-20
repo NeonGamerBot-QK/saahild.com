@@ -5,6 +5,8 @@ import InfogramBelowMain from './components/infobelowmain'
 import { HashRouter } from './components/HashRouter'
 import Route from './components/HashRouter/Route'
 import AboutPage from './components/AboutPage'
+import SkillSet from './components/AboutPage/SkillSet'
+import GithubStats from './components/AboutPage/Github'
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -16,7 +18,11 @@ function App () {
         <InfogramBelowMain />
         <br />
       </div>} />
-      <Route path='#/about' component={<AboutPage />} />
+      <Route path='#/about' component={<>
+        <AboutPage />
+        <SkillSet />
+        <GithubStats />
+        </>} />
     </HashRouter>
   )
 }

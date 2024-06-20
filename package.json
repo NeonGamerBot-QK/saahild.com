@@ -16,6 +16,7 @@
     "react": "^18.2.0",
     "react-animate-on-scroll": "^2.1.9",
     "react-dom": "^18.2.0",
+    "react-icons": "^5.2.1",
     "react-parallax-tilt": "^1.7.224",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",

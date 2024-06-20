@@ -29,7 +29,10 @@
   --base: #1e1e2e;
   --mantle: #181825;
   --crust: #11111b;
-  }  
+  } 
+  .mauve {
+    color: var(--mauve)
+  } 
   .text-highlight {
     color: var(--mauve);
     /* color: linear-gradient(var(--mauve), var(--mantle); */

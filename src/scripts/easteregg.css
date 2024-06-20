@@ -1,0 +1,49 @@
+.easter-egg {
+    color:red;
+     pointer-events: none;
+      position: fixed;
+       /* top: 40vh;  */
+       /* left: 20vw; */
+        object-fit: cover;
+         background-size: cover!important; 
+         width: 10vw;
+          height: 10vw;
+          animation: Toast--spinner infinite linear 60s, Overlay--motion-slideInLeft infinite alternate 1.06s, Overlay--motion-slideUp infinite alternate 2.2s; background: url('https://github.com/NeonGamerBot-QK/NeonGamerBot-QK/blob/main/com--unscreen.gif?raw=true');
+z-index: 999;
+        }
+/* https://github.com/primer/css/blob/main/src/toasts/toasts.scss#L119-#L127 */
+@keyframes Toast--spinner {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+/* https://github.com/primer/view_components/blob/main/app/components/primer/alpha/dialog.pcss */
+  
+@keyframes Overlay--motion-slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+  }
+  
+  @keyframes Overlay--motion-slideUp {
+    from {
+      transform: translateY(100%);
+    }
+  }
+  
+  @keyframes Overlay--motion-slideInRight {
+    from {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes Overlay--motion-slideInLeft {
+    from {
+      transform: translateX(100%);
+    }
+  }
