@@ -12,6 +12,7 @@
     "@types/node": "^16.18.98",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "ackee-tracker": "^5.1.0",
     "animate.css": "^4.1.1",
     "react": "^18.2.0",
     "react-animate-on-scroll": "^2.1.9",
@@ -49,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "@types/ackee-tracker": "^5.0.4",
     "@types/react-animate-on-scroll": "^2.1.8",
     "daisyui": "^4.12.2",
     "tailwindcss": "^3.4.4"
