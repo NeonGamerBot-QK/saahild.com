@@ -20,7 +20,7 @@ export default function Navbar() {
        <NavLinks />
       </ul>
       </div>
-      <a className="btn btn-ghost text-xl" href="#">saahild.com</a>
+      <a className="btn btn-ghost text-xl " href="#"><span className="nav-text-gradient">saahild.com</span></a>
     
       <div className="navbar-center hidden lg:flex">
       <ul className="menu menu-horizontal px-1 nav-links">
