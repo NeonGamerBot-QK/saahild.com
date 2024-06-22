@@ -10,6 +10,7 @@ import Navbar from './components/navbar';
 import { runTitle } from './scripts/title';
 import { startEvent } from './scripts/hashevent';
 import { listenForEasterEgg } from './scripts/oneko_easteregg';
+import Footer from './components/footer';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -25,6 +26,7 @@ root.render(
 
       <Navbar />
     <App />
+    <Footer />
 
   </React.StrictMode>
 );
