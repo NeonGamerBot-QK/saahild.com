@@ -7,6 +7,7 @@ import Route from './components/HashRouter/Route'
 import AboutPage from './components/AboutPage'
 import SkillSet from './components/AboutPage/SkillSet'
 import GithubStats from './components/AboutPage/Github'
+import Projects from './components/Projects'
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -23,6 +24,7 @@ function App () {
         <SkillSet />
         <GithubStats />
         </>} />
+        <Route path='#/projects' component={<Projects />} />
     </HashRouter>
   )
 }
