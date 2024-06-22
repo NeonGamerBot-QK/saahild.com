@@ -8,6 +8,7 @@ import AboutPage from './components/AboutPage'
 import SkillSet from './components/AboutPage/SkillSet'
 import GithubStats from './components/AboutPage/Github'
 import Projects from './components/Projects'
+import Page404 from './components/static/404'
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -25,6 +26,7 @@ function App () {
         <GithubStats />
         </>} />
         <Route path='#/projects' component={<Projects />} />
+        <Route path='*' component={<Page404 />} />
     </HashRouter>
   )
 }
