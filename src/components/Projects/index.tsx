@@ -6,19 +6,20 @@ import { LuGitFork, LuGlobe } from "react-icons/lu"
  * @param param0 
  * @returns 
  */
-export function Card({ title, description, image,alt, Badges, svn_link} : {
+export function Card({ title, description, image,alt, Badges, svn_link, is_fork} : {
     title: string ,
     description: string,
     image?: string,
     alt?: string,
     Badges?: any,
-    svn_link: string
+    svn_link: string,
+    is_fork: Boolean
 }) {
     return <div style={{ background: "var(--surface0)"}}className="card md:w-80 shadow-xl">
 {image ? 
     <figure><img src={image} alt={alt || "No Alt"} /></figure>: null}
     <div className="card-body">
-      <h2 className="card-title text-center text-highlight">
+      <h2 className="card-title text-center text-highlight">{is_fork ? <LuGitFork /> : null}
 <a href={svn_link}>{title}</a>
         {/* <div className="badge badge-secondary">NEW</div> */}
       </h2>
@@ -49,14 +50,17 @@ const [translateY, setTranslateY] = useState(0)
 
             .then((data) => 
                 {
-                // console.log([...data[0], ...data[1]])
+                console.log(data[0], data[1])
                 const idsThatAreFound:any = {}
-                const items = [...data[0], ...data[1]].filter(function(item, pos, self) {
+                const items = [...data[0], ...data[1]]
+                .filter(e => e.topics.includes('github-include-on-site'))
+                .filter(function(item, pos, self) {
                     if(idsThatAreFound[item.id]) return false;
                     idsThatAreFound[item.id] = true
                     return true;
                 })
-                .filter(e => e.topics.includes('github-include-on-site'))
+                
+                console.log()
                 console.log(items)
                 //@ts-ignore
                     setGithubData(items)
@@ -75,7 +79,7 @@ const [translateY, setTranslateY] = useState(0)
       <button className="btn btn-primary">Get Started</button> */}
     <div className="grid flex grid-cols-2 md:gap-6 gap-2 text-center mt-5 duration-1000" style={{ transform: `translateY(${-translateY}%)` }}>
 {githubData.map((d: any) => {
-return  <Card title={d.name} description={d.description} key={d.id}  svn_link={d.html_url} Badges={<>
+return  <Card title={d.name} description={d.description} key={d.id}  svn_link={d.html_url} is_fork={d.fork}Badges={<>
 <div className="inline-flex">
 
 <a  target="_blank" href={d.html_url + '/fork'} style={{ background: "var(--mantle)", borderRadius: "50%" }} className="btn btn-change rounded-full mauve"><LuGitFork /></a>
@@ -85,7 +89,7 @@ return  <Card title={d.name} description={d.description} key={d.id}  svn_link={d
 </div>
 <div className="md:inline-flex">
 {d.topics.filter((e:string) => !e.includes('github-include-on-site')).map((topic:string) => {
-    return <div className="badge badge-outline">{topic}</div>
+    return <div className="badge badge-outline ">{topic}</div>
 })}
 </div>
 </>}/>
