@@ -1,3 +1,4 @@
+//@ts-ignore
 import * as ackeeTracker from 'ackee-tracker'
 const doNotTrack = navigator.doNotTrack == "1" || localStorage.doNotTrack || sessionStorage.doNotTrack || false;
 const isDev = process.env.NODE_ENV !== "production"
@@ -24,7 +25,7 @@ this.client = ackeeTracker.create(server_url, {
 this.domainId = id
 
 }
-handleWebVitals(d) {
+handleWebVitals(d: any) {
 
 }
 }
