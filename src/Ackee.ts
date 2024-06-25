@@ -46,7 +46,7 @@ getDeviceInfo() {
   }
   
 handleWebVitals = () =>(d: any) => {
-console.log(d)
+if(isDev) console.log(d)
 let idThing = d.name
 // const _this = this
 switch(idThing) {

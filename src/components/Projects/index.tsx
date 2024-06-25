@@ -50,7 +50,7 @@ const [translateY, setTranslateY] = useState(0)
 
             .then((data) => 
                 {
-                console.log(data[0], data[1])
+                  if(process.env.NODE_ENV !== "production")   console.log(data[0], data[1])
                 const idsThatAreFound:any = {}
                 const items = [...data[0], ...data[1]]
                 .filter(e => e.topics.includes('github-include-on-site'))
@@ -61,7 +61,7 @@ const [translateY, setTranslateY] = useState(0)
                 })
                 
                 console.log()
-                console.log(items)
+                if(process.env.NODE_ENV !== "production")    console.log(items)
                 //@ts-ignore
                     setGithubData(items)
                 })
