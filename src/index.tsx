@@ -11,6 +11,11 @@ import { runTitle } from './scripts/title';
 import { startEvent } from './scripts/hashevent';
 import { listenForEasterEgg } from './scripts/oneko_easteregg';
 import Footer from './components/footer';
+import Ackee from './Ackee';
+const analytics = new Ackee({
+  server_url: process.env.REACT_APP_SERVER_URL || "https://ackee.saahild.com", 
+  id: `c082bd15-f9d8-414f-aa10-926e1d66a5d6`
+})
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -23,15 +28,13 @@ document.title = 'React App';
 root.render(
   <React.StrictMode>
     <Background />
-
       <Navbar />
-    <App />
+    <App analytics={analytics} />
     <Footer />
-
   </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals(console.log);
+reportWebVitals(analytics.handleWebVitals());

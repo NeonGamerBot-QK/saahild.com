@@ -1,13 +1,14 @@
 import { useState } from "react"
 
 const isDev =  process.env.NODE_ENV !== 'production'
-export default function ContactPage() {
+export default function ContactPage({ analytics }: any) {
     const [done, setDone] = useState(false)
     const [error, setError] = useState<string |  null>(null)
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
     const [nameOfPerson, setName] = useState("")
     const onSubmit = (e: any) => {
+        analytics.contactPage(email)
         if(isDev) {
             // dev mode dosent have php backend so i have to run it do ABSOULTLEY NOTHING!
             // just pretend it works
@@ -34,10 +35,11 @@ if(Math.random() > .5) {
                 }
             })
         }
+        
     }
     const ui = (f: any) => (e: any) => f(e.target.value)
     return <div className="hero min-h-screen ">
-    <div className="hero-content text-center">
+    <div className="text-center">
       <div className="max-w-md">
         <h1 className="text-5xl font-bold text-highlight mt-10">Contact Form</h1>
         {/* <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p> */}
@@ -91,5 +93,7 @@ export function ContactForm({ onSubmit,
 <div>
     <button type="submit" className="btn mauve" style={{ background: "var(--surface0)"}}>Submit</button>
 </div>
+    <br />
     </form>
+    
 }

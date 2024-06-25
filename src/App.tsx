@@ -13,7 +13,7 @@ import ContactPage from './components/ContactPage'
 // import logo from './logo.svg';
 // import './App.css';
 
-function App () {
+function App ({ analytics }: any) {
   return (
     <HashRouter>
       <Route path={'#/'} index component={<div style={{ zIndex: 9999 }}>
@@ -27,7 +27,7 @@ function App () {
         <GithubStats />
         </>} />
         <Route path='#/projects' component={<Projects />} />
-        <Route path='#/contact' component={<ContactPage />} />
+        <Route path='#/contact' component={<ContactPage analytics={analytics} />} />
         <Route path='*' component={<Page404 />} />
     </HashRouter>
   )
