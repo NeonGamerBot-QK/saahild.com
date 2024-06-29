@@ -22,7 +22,7 @@ export default function Background () {
 
   return (
     <div style={{ filter: 'blur(10px)' }} ref={domRef}>
-      <ul className='background'>
+      <ul className='max-h-screen background'>
         {new Array(49).join('.').split('.').map((_, i) => {
           return <li key={i} className={i % 2 === 0 ? 'bg-effect' : ''} />
         })}
