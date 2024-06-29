@@ -1,11 +1,52 @@
-import { SiReplit } from 'react-icons/si'
+import { SiDiscord, SiReplit } from 'react-icons/si'
 import Icon from '../static/Icons'
 import { git, npm } from '../static/icons_list'
 import bento from '../../assets/bento.svg'
 import tor from '../../assets/tor.svg'
 import './index.css'
-
+import { useEffect, useState } from 'react'
+type DiscordStatus = "dnd" | "idle" | "online" | "offline"
+type Data = {
+  discord_status: DiscordStatus,
+  kv: {
+    //@ts-ignore if u have a problem js slap that
+    is_disabled?: string,
+    [key: string]: string
+  }
+}
+function getFillColor(s: DiscordStatus): string {
+  switch(s) {
+    case "dnd": 
+return "var(--red)"
+    break;
+    case "idle":
+      return "var(--yellow)"
+      break;
+      case "online":
+        return "var(--green)"
+        break;
+        case "offline": 
+        return "var(--overlay1)"
+        break;
+default:
+return "var(--mauve)"
+break;
+  }
+}
 export default function Footer () {
+  const [lanyardData, setData] = useState<null | Data>(null)
+  useEffect(() => {
+    const signal = new AbortController()
+    if(!lanyardData) {
+      fetch("https://api.lanyard.rest/v1/users/566766267046821888", { signal: signal.signal }).then(r=>r.json()).then(json => {
+        if(json.success) {
+          console.log(json.data)
+          setData(json.data as Data)
+        }
+      })
+    }
+    // return () => signal.abort()
+  })
   return <>
   <footer className='footer items-center p-4 bottom-0 overflow-hidden' style={{ zIndex: 9999, overflow: 'hidden', color: 'var(--text)', background: 'var(--mantle)' }}>
     <aside className='items-center grid-flow-col'>
@@ -21,8 +62,12 @@ export default function Footer () {
       <div className='inline-flex gap-2 bottom mt-1'>
         <a href='https://replit.com/@NeonGamerBotQK' target='_blank' className='inline-flex'><SiReplit className='inline-flex hover:scale-125 duration-500 linear' height='16' width='16' fill='var(--maroon)' /></a>
         <a href='https://bento.me/saahil' target='_blank' className='inline-flex'><Icon icon={bento} width={16} height={16} /> </a>
+        {lanyardData ? 
+  <a href="https://discord.com/users/566766267046821888"><SiDiscord fill={lanyardData.kv.is_disabled ? "var(--mauve)" : getFillColor(lanyardData.discord_status)} /></a>
+: null}
       </div>
 <a href="https://ohdhie7qka42mvxcl2lb5bcxw6jumwn6lbqdmpli3xxhktvyqg2gtryd.onion/"><Icon icon={tor} /></a>
+
       {/* <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg>
       </a>
       <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a>
