@@ -10,7 +10,8 @@ export function runTitle() {
         }
         window.document.documentElement.className = "duration-500 ease-in-out "
         if (document.hasFocus()) {
-          document.title = title0 || "Saahild.com"
+
+          document.title = title0?.toLowerCase() === "react app" ? "Saahild.com" : (title0 ?? "Saahild.com") 
           window.document.documentElement.style.filter = ""
         } else {
           document.title = 'Come Back :('
