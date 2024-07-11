@@ -1,11 +1,14 @@
 import { SiDiscord, SiReplit } from 'react-icons/si'
+import {FaKey} from "react-icons/fa"
 import Icon from '../static/Icons'
 import { git, npm } from '../static/icons_list'
 import bento from '../../assets/bento.svg'
 import tor from '../../assets/tor.svg'
 import './index.css'
 import { useEffect, useState } from 'react'
-import { LuGlobe } from 'react-icons/lu'
+import { LuGlobe, LuKey } from 'react-icons/lu'
+const isDev = process.env.NODE_ENV !== "production"
+
 type DiscordStatus = "dnd" | "idle" | "online" | "offline"
 type Data = {
   discord_status: DiscordStatus,
@@ -36,6 +39,7 @@ break;
 }
 export default function Footer () {
   const [lanyardData, setData] = useState<null | Data>(null)
+  const [fingerprint, setFingerprint] = useState<string | null>(null)
   useEffect(() => {
     const signal = new AbortController()
     if(!lanyardData) {
@@ -45,6 +49,13 @@ export default function Footer () {
           setData(json.data as Data)
         }
       })
+    }
+    if(!fingerprint) {
+      if(isDev) {
+        setFingerprint("FDE9 95C2 8C7E E563")
+      } else {
+        fetch('http://saahild.com/creds/fingerprint.txt').then(r=>r.text()).then(d => setFingerprint(d))
+      }
     }
     // return () => signal.abort()
   })
@@ -58,6 +69,7 @@ export default function Footer () {
     </aside>
 
     <nav className='grid-flow-col gap-4 md:place-self-center md:justify-self-end flex'>
+      <a href="http://saahild.com/creds/public.pgp.txt"><div className="badge mauve p-2" style={{ background: "var(--surface1)" }}><FaKey style={{marginRight: "5px"}}/>{" "}{fingerprint}</div></a>
       <a href='https://github.com/NeonGamerBot-QK' target='_blank'><Icon icon={git} /></a>
       <a href='https://www.npmjs.com/~neongamerbot' target='_blank'><Icon icon={npm} /></a>
       <div className='inline-flex gap-2 bottom mt-1'>
