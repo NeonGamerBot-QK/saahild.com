@@ -54,7 +54,7 @@ export default function Footer () {
       if(isDev) {
         setFingerprint("FDE9 95C2 8C7E E563")
       } else {
-        fetch('http://saahild.com/creds/fingerprint.txt').then(r=>r.text()).then(d => setFingerprint(d))
+        fetch('https://saahild.com/creds/fingerprint.txt').then(r=>r.text()).then(d => setFingerprint(d))
       }
     }
     // return () => signal.abort()
