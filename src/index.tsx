@@ -8,7 +8,6 @@ import Background from './bg/main';
 import { injectOneko } from './scripts/oneko';
 import Navbar from './components/navbar';
 import { runTitle } from './scripts/title';
-import { startEvent } from './scripts/hashevent';
 import { listenForEasterEgg } from './scripts/oneko_easteregg';
 import Footer from './components/footer';
 import Ackee from './Ackee';
@@ -22,7 +21,6 @@ const root = ReactDOM.createRoot(
 document.title = "Saahild.com"
 injectOneko();
 runTitle()
-startEvent()
 listenForEasterEgg()
 document.title = 'React App';
 root.render(
