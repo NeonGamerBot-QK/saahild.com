@@ -24,7 +24,8 @@ if(Math.random() > .5) {
         } else {
             const form = new FormData(e.target)
             fetch('/contact_form.php', {
-                body: form
+                body: form,
+                method: "POST"
             }).then(e => {
                 return e.text()
             }).then(text => {
