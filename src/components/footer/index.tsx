@@ -54,7 +54,9 @@ export default function Footer () {
       if(isDev) {
         setFingerprint("FDE9 95C2 8C7E E563")
       } else {
-        fetch('https://saahild.com/creds/fingerprint.txt').then(r=>r.text()).then(d => setFingerprint(d))
+        fetch(`//${window.location.host}/creds/fingerprint.txt`).then(r=>r.text()).then(d => setFingerprint(d)).catch(() => {
+        setFingerprint("FDE9 95C2 8C7E E563")
+        })
       }
     }
     // return () => signal.abort()
@@ -69,7 +71,7 @@ export default function Footer () {
     </aside>
 
     <nav className='grid-flow-col gap-4 md:place-self-center md:justify-self-end flex'>
-      <a href="http://saahild.com/creds/public.pgp.txt"><div className="badge mauve p-2" style={{ background: "var(--surface1)" }}><FaKey style={{marginRight: "5px"}}/>{" "}{fingerprint}</div></a>
+      <a href={`//${window.location.hostname}/creds/public.pgp.txt`}><div className="badge mauve p-2" style={{ background: "var(--surface1)" }}><FaKey style={{marginRight: "5px"}}/>{" "}{fingerprint}</div></a>
       <a href='https://github.com/NeonGamerBot-QK' target='_blank'><Icon icon={git} /></a>
       <a href='https://www.npmjs.com/~neongamerbot' target='_blank'><Icon icon={npm} /></a>
       <div className='inline-flex gap-2 bottom mt-1'>
