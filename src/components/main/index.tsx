@@ -6,7 +6,7 @@ import Typewriter from './type'
 import { useEffect, useRef } from 'react'
 export default function Main () {
   const mainEl = useRef(null)
-  
+
   return (
     <div className={'hero min-h-screen'} ref={mainEl}>
       <div style={{ animation: 'fadeInDown', animationDuration: '1.5s', zIndex: 5 }} className={'animate__animated animate__fadeIn'} >
