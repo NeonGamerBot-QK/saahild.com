@@ -78,7 +78,7 @@ const [translateY, setTranslateY] = useState(0)
       {/* <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
       <button className="btn btn-primary">Get Started</button> */}
     <div className="flex grid grid-cols-2 gap-2 mt-5 text-center duration-1000 md:gap-6" style={{ transform: `translateY(${-translateY}%)` }}>
-{githubData.map((d: any) => {
+{githubData.length > 0 ?  githubData.map((d: any) => {
 return  <Card title={d.name} description={d.description} key={d.id}  svn_link={d.html_url} is_fork={d.fork}Badges={<>
 <div className="inline-flex">
 
@@ -94,7 +94,9 @@ return  <Card title={d.name} description={d.description} key={d.id}  svn_link={d
 </div>
 </>}/>
 
-})}
+}) : <div>
+  <span className="loading loading-bars loading-lg mauve font-5xl"></span>
+  </div>}
     </div>
     </div>
   </div>
