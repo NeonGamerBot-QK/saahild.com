@@ -5,4 +5,3 @@ const reactOutput = Bun.spawnSync({
 })
 console.log(reactOutput.stdout.toString())
 console.log(`Built react app`)
-// fs.cpSync(path.join(__dirname, '../build'), path.join(__dirname, '../dist/php'), {recursive: true})

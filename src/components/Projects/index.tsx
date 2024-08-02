@@ -38,11 +38,7 @@ export default function Projects() {
     // otherwise they will all be concacted with the github.json file
     const [githubData, setGithubData] = useState ([])
 const [translateY, setTranslateY] = useState(0)
-// if(translateY > -50) {
-//     setTimeout(() => {
-// setTranslateY(translateY - 10)
-//     }, 40)
-// }
+
     const fetchData = () => {
       return Promise.all([fetch(`https://api.github.com/users/NeonGamerBot-QK/repos?per_page=100`)
             .then((response) => response.json()),fetch(`https://api.github.com/users/NeonGamerBot-QK/repos?per_page=100?page=2`)

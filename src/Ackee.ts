@@ -34,26 +34,19 @@ getDeviceInfo() {
     'undefined'
       ? null
       : navigator)
-    // const conn = nav && nav.connection ? nav.connection : null
     return {
       url: window.location ? window.location.href : null,
       referrer: document ? document.referrer : null,
       userAgent: nav ? nav.userAgent : null,
-    //   memory: nav ? nav.deviceMemory : undefined,
       cpus: nav ? nav.hardwareConcurrency : undefined,
-    //   connection: conn ? { effectiveType: conn.effectiveType, rtt: conn.rtt, downlink: conn.downlink } : undefined,
     }
   }
   
 handleWebVitals = () =>(d: any) => {
 if(isDev) console.log(d)
 let idThing = d.name
-// const _this = this
 switch(idThing) {
-    // case "TTFB":
-    //     // console.log(`TTFB: ${entry.responseStart}`, entry.name);
 
-    // break;
     case "LCP":
 d.entries.forEach((e: any) =>{
     this.client.action(Actions.LCP, {

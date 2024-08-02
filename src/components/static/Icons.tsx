@@ -1,12 +1,4 @@
-// import cssIcon from "../../assets/icons/css.svg"
-// import htmlIcon from "../../assets/icons/html.svg"
-// import reactjs from "../../assets/icons/reactjs.svg"
-// import nodejs from "../../assets/icons/nodejs.svg"
-// import typescript from "../../assets/icons/typescript.svg"
-// import javascript from "../../assets/icons/javascript.svg"
-// import CloudFolder from "../../assets/icons/folder_cloud.svg"
-// import CloudFolderOpen from "../../assets/icons/folder_cloud_open.svg"
-// import { htmlToJsx } from "html-to-jsx-transform";
+
 import * as Icons from "./icons_list"
 const icons:any = {
     // pre set names so they dont break

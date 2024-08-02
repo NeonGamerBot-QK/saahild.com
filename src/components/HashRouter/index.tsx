@@ -18,7 +18,6 @@ export function HashRouter({ children }: any) {
 if(process.env.NODE_ENV !== "production") console.log('script', child.props, window.location.hash, child.props.route == hash, (hash.length < 2 && child.props.index))    
   return  child.props.path == hash || (hash.length < 2 && child.props.index) || child.props.path == "*"
 })
- // console.log('child', child)
     if(child) return child.props.component;
   return null;
 }

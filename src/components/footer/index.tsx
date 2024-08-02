@@ -59,7 +59,6 @@ export default function Footer () {
         })
       }
     }
-    // return () => signal.abort()
   })
   return <>
   <footer className='footer items-center p-4 bottom-0 overflow-hidden' style={{ zIndex: 9999, overflow: 'hidden', color: 'var(--text)', background: 'var(--mantle)' }}>

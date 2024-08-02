@@ -10,8 +10,6 @@ import GithubStats from './components/AboutPage/Github'
 import Projects from './components/Projects'
 import Page404 from './components/static/404'
 import ContactPage from './components/ContactPage'
-// import logo from './logo.svg';
-// import './App.css';
 
 function App ({ analytics }: any) {
   return (

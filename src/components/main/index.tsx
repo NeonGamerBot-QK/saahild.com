@@ -4,15 +4,9 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import Tilt from 'react-parallax-tilt'
 import Typewriter from './type'
 import { useEffect, useRef } from 'react'
-// import 'animate.css/animate.css'
 export default function Main () {
   const mainEl = useRef(null)
-  // useEffect(() => {
-  //   if (document.activeElement !== mainEl.current) {
-  //     // do something
-  //     mainEl.current.className
-  //   }
-  // })
+  
   return (
     <div className={'hero min-h-screen'} ref={mainEl}>
       <div style={{ animation: 'fadeInDown', animationDuration: '1.5s', zIndex: 5 }} className={'animate__animated animate__fadeIn'} >
