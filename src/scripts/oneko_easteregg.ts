@@ -14,10 +14,10 @@ return {
 export function listenForEasterEgg() {
 const oneko2 = startEasterEgg()
 window.addEventListener('keydown', (k) => {
-if((k.ctrlKey || k.metaKey) && k.shiftKey && k.altKey) oneko2.toggle()
+if(k.shiftKey && k.altKey) oneko2.toggle()
 })
 window.addEventListener('keyup', (k) => {
-    if((k.ctrlKey || k.metaKey) && k.shiftKey && k.altKey) oneko2.toggle()
+    if (k.shiftKey && k.altKey) oneko2.toggle()
 })    
 }
 // expose to window
