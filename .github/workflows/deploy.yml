@@ -8,12 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
     - name: Set Short SHA
       id: short_sha
       run: |
         echo $(pwd) 
         echo $(ls)
-        cd .git
         echo "short_sha=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@v0.1.8
