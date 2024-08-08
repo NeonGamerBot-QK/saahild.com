@@ -10,7 +10,9 @@ jobs:
     steps:
     - name: Set Short SHA
       id: short_sha
-      run: echo "short_sha=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+      run: |
+        echo $(pwd) 
+        echo "short_sha=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@v0.1.8
       with:
