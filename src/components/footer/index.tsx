@@ -7,6 +7,8 @@ import tor from '../../assets/tor.svg'
 import './index.css'
 import { useEffect, useState } from 'react'
 import { LuGlobe, LuKey } from 'react-icons/lu'
+// import { FaCodeCommit} fr
+import { FaCodeCommit, FaRocket } from "react-icons/fa6";
 const isDev = process.env.NODE_ENV !== "production"
 
 type DiscordStatus = "dnd" | "idle" | "online" | "offline"
@@ -71,6 +73,8 @@ export default function Footer () {
 
     <nav className='grid-flow-col gap-4 md:place-self-center md:justify-self-end flex'>
       <a href={`//${window.location.hostname}/creds/public.pgp.txt`}><div className="badge mauve p-2" style={{ background: "var(--surface1)" }}><FaKey style={{marginRight: "5px"}}/>{" "}{fingerprint}</div></a>
+      <a href={'https://github.com/NeonGamerBot-QK/saahild.com/commit/'+process.env.REACT_APP_BUILD_SHA}><div className="badge mauve p-2" style={{ background: "var(--surface1)" }}><FaCodeCommit style={{marginRight: "5px"}}/>{" "}{process.env.REACT_APP_BUILD_SHA}</div></a>
+      <a href={'https://github.com/NeonGamerBot-QK/saahild.com/actions/run/'+process.env.REACT_APP_BUILD_ID}><div className="badge mauve p-2" style={{ background: "var(--surface1)" }}><FaRocket style={{marginRight: "5px"}}/>{" "}{process.env.REACT_APP_BUILD_ID}</div></a>
       <a href='https://github.com/NeonGamerBot-QK' target='_blank'><Icon icon={git} /></a>
       <a href='https://www.npmjs.com/~neongamerbot' target='_blank'><Icon icon={npm} /></a>
       <div className='inline-flex gap-2 bottom mt-1'>
