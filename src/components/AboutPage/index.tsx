@@ -1,7 +1,25 @@
 import { mdiBullet } from '@mdi/js'
 import Icon from '@mdi/react'
+import { useEffect, useState } from 'react'
 
 export default function AboutPage () {
+  const [currentGrade, setCurrentGrade] = useState<string>("0th")
+  useEffect(() => {
+    let year:number = new Date().getFullYear()
+    if (year > 2027) {
+let result = year - 2027
+      switch(result) {
+case 0:
+  setCurrentGrade(`12th`)
+  break;
+  default: 
+setCurrentGrade(`Collage Student`)
+  break;
+      }
+    } else {
+      setCurrentGrade(`${Math.abs((2027 - 2024) - 13)}th`)
+    }
+  })
   return <div className={'hero min-h-screen md:ml-0 ml-2'}>
     <div className='container'>
       <h1 className='text-3xl font-bold'>
@@ -13,7 +31,7 @@ Some info about <span className='text-highlight'>me</span>
             Hi Everyone, I am{' '}
             <span className='text-highlight '>Saahil dutta, </span>
             from <span className='text-highlight '> USA </span>
-            <br />I am a 9th grader in KCD.
+            <br />I am a {currentGrade} grader in KCD.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
