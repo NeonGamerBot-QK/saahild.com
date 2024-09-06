@@ -1,5 +1,15 @@
-name: remote ssh command
-on: [push]
+name: Remote Deploy
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      # on code related change
+      - ".github/workflows/deploy.yml"
+      - "src/**"
+      - "public/**"
+  workflow_dispatch:
 
 jobs:
 
