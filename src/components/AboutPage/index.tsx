@@ -20,7 +20,8 @@ setCurrentGrade(`Collage Student`)
       setCurrentGrade(`${Math.abs((2027 - 2024) - 13)}th`)
     }
   })
-  return <div className={'hero min-h-screen md:ml-0 ml-2'}>
+  return (
+  <div className={'hero min-h-screen md:ml-0 ml-2'}>
     <div className='container'>
       <h1 className='text-3xl font-bold'>
 Some info about <span className='text-highlight'>me</span>
