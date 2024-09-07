@@ -1,49 +1,52 @@
-import { mdiBullet } from '@mdi/js'
-import Icon from '@mdi/react'
-import { useEffect, useState } from 'react'
+import { mdiBullet } from "@mdi/js";
+import Icon from "@mdi/react";
+import { useEffect, useState } from "react";
 
-export default function AboutPage () {
-  const [currentGrade, setCurrentGrade] = useState<string>("0th")
+export default function AboutPage() {
+  const [currentGrade, setCurrentGrade] = useState<string>("0th");
   useEffect(() => {
-    let year:number = new Date().getFullYear()
+    let year: number = new Date().getFullYear();
     if (year > 2027) {
-let result = year - 2027
-      switch(result) {
-case 0:
-  setCurrentGrade(`12th`)
-  break;
-  default: 
-setCurrentGrade(`Collage Student`)
-  break;
+      let result = year - 2027;
+      switch (result) {
+        case 0:
+          setCurrentGrade(`12th`);
+          break;
+        default:
+          setCurrentGrade(`Collage Student`);
+          break;
       }
     } else {
-      setCurrentGrade(`${Math.abs((2027 - 2024) - 13)}th`)
+      setCurrentGrade(`${Math.abs(2027 - 2024 - 13)}th`);
     }
-  })
-  return <div className={'hero min-h-screen md:ml-0 ml-2'}>
-    <div className='container'>
-      <h1 className='text-3xl font-bold'>
-Some info about <span className='text-highlight'>me</span>
-      </h1>
-      <div>
-        <blockquote className='mb-0 blockquote'>
-          <p style={{ textAlign: 'justify' }}>
-            Hi Everyone, I am{' '}
-            <span className='text-highlight '>Saahil dutta, </span>
-            from <span className='text-highlight '> USA </span>
-            <br />I am a {currentGrade} grader in KCD.
-            <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
-          </p>
-          <ul>
-            <li className='about-activity'>
-              <Icon path={mdiBullet} className='inline-block'size={1} /> Playing Games
-            </li>
-            <li className='about-activity'>
-              <Icon path={mdiBullet} className='inline-block' size={1} /> Eating different types of food
-            </li>
-            {/* <li className="about-activity">
+  });
+  return (
+    <div className={"hero min-h-screen md:ml-0 ml-2"}>
+      <div className="container">
+        <h1 className="text-3xl font-bold">
+          Some info about <span className="text-highlight">me</span>
+        </h1>
+        <div>
+          <blockquote className="mb-0 blockquote">
+            <p style={{ textAlign: "justify" }}>
+              Hi Everyone, I am{" "}
+              <span className="text-highlight ">Saahil dutta, </span>
+              from <span className="text-highlight "> USA </span>
+              <br />I am a {currentGrade} grader in KCD.
+              <br />
+              <br />
+              Apart from coding, some other activities that I love to do!
+            </p>
+            <ul>
+              <li className="about-activity">
+                <Icon path={mdiBullet} className="inline-block" size={1} />{" "}
+                Playing Games
+              </li>
+              <li className="about-activity">
+                <Icon path={mdiBullet} className="inline-block" size={1} />{" "}
+                Eating different types of food
+              </li>
+              {/* <li className="about-activity">
               <ImPointRight className="inline-block"/> Traveling
             </li> */}
               <li className="about-activity">
