@@ -1,30 +1,39 @@
-name: remote ssh command
-on: [push]
+name: Remote Deploy
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      # on code related change
+      - ".github/workflows/deploy.yml"
+      - "src/**"
+      - "public/**"
+  workflow_dispatch:
 
 jobs:
-
   build:
     name: Build & deploy
     runs-on: ubuntu-latest
     environment: production
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v3
-    - name: Set Short SHA
-      id: short_sha
-      run: |
-        echo $(pwd) 
-        echo $(ls)
-        echo "short_sha=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
-    - name: executing remote ssh commands using password
-      uses: appleboy/ssh-action@v0.1.8
-      with:
-        context: .
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT }}
-        script: |
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      - name: Set Short SHA
+        id: short_sha
+        run: |
+          echo $(pwd) 
+          echo $(ls)
+          echo "short_sha=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@v0.1.8
+        with:
+          context: .
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: |
             cd /${{ secrets.USERNAME }}
             export REACT_APP_BUILD_SHA=${{ steps.short_sha.outputs.short_sha }}
             export REACT_APP_BUILD_ID=${{ github.run_id }}
