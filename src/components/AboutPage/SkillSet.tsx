@@ -78,8 +78,8 @@ export function SkillSet() {
             </a>
             <a href="https://pptr.dev/" className={"tech-icons inline-flex"}>
               <Icon icon={puppeteer} className="w-40" />
+          </a>
             </div>
-          </div>
           <div className="inline-flex">
             <a href="https://sass-lang.com/" className={"tech-icons inline-flex"}>
               <Icon icon={sass} className="w-40" />
@@ -136,7 +136,8 @@ export function SkillSet() {
   <div style={{  justifyContent: 'center', textAlign: 'center', alignItems: "center", marginLeft: '50px', paddingBottom: '50px' }} className='inline-flex'>
   <div className={"tech-icons inline-flex"}><Icon icon={tailwind} className='w-40' /></div>
   </div> */}
-      </div>
+          </div>
+
     </div>
   );
 }
