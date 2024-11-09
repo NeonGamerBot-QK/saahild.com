@@ -78,13 +78,19 @@ export function SkillSet() {
             </a>
             <a href="https://pptr.dev/" className={"tech-icons inline-flex"}>
               <Icon icon={puppeteer} className="w-40" />
-          </a>
-            </div>
+            </a>
+          </div>
           <div className="inline-flex">
-            <a href="https://sass-lang.com/" className={"tech-icons inline-flex"}>
+            <a
+              href="https://sass-lang.com/"
+              className={"tech-icons inline-flex"}
+            >
               <Icon icon={sass} className="w-40" />
             </a>
-            <a href="https://tailwindcss.com/" className={"tech-icons inline-flex"}>
+            <a
+              href="https://tailwindcss.com/"
+              className={"tech-icons inline-flex"}
+            >
               <Icon icon={tailwind} className="w-40" />
             </a>
             <div className={"tech-icons inline-flex"}>
@@ -93,10 +99,16 @@ export function SkillSet() {
             <a href="https://bun.sh/" className={"tech-icons inline-flex"}>
               <Icon icon={bun} className="w-40" />
             </a>
-            <a href="https://cplusplus.com/" className={"tech-icons inline-flex"}>
+            <a
+              href="https://cplusplus.com/"
+              className={"tech-icons inline-flex"}
+            >
               <Icon icon={cpp} className="w-40" />
             </a>
-            <a href="https://www.docker.com/" className={"tech-icons inline-flex"}>
+            <a
+              href="https://www.docker.com/"
+              className={"tech-icons inline-flex"}
+            >
               <Icon icon={docker} className="w-40" />
             </a>
             <a href="https://graphql.org/" className={"tech-icons inline-flex"}>
@@ -104,16 +116,25 @@ export function SkillSet() {
             </a>
           </div>
           <div className="inline-flex">
-            <a href="https://www.w3schools.com/html/" className={"tech-icons inline-flex"}>
+            <a
+              href="https://www.w3schools.com/html/"
+              className={"tech-icons inline-flex"}
+            >
               <Icon icon={html} className="w-40" />
             </a>
             <a href="https://react.dev/" className={"tech-icons inline-flex"}>
               <Icon icon={javascriptReact} className="w-40" />
             </a>
-            <a href="https://www.python.org/" className={"tech-icons inline-flex"}>
+            <a
+              href="https://www.python.org/"
+              className={"tech-icons inline-flex"}
+            >
               <Icon icon={python} className="w-40" />
             </a>
-            <a href="https://dotnet.microsoft.com/en-us/languages/csharp" className={"tech-icons inline-flex"}>
+            <a
+              href="https://dotnet.microsoft.com/en-us/languages/csharp"
+              className={"tech-icons inline-flex"}
+            >
               <Icon icon={csharp} className="w-40" />
             </a>
             {/* for the sake of css coffeescript is out! */}
@@ -136,8 +157,7 @@ export function SkillSet() {
   <div style={{  justifyContent: 'center', textAlign: 'center', alignItems: "center", marginLeft: '50px', paddingBottom: '50px' }} className='inline-flex'>
   <div className={"tech-icons inline-flex"}><Icon icon={tailwind} className='w-40' /></div>
   </div> */}
-          </div>
-
+      </div>
     </div>
   );
 }
