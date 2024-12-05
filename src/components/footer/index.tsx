@@ -86,6 +86,7 @@ export default function Footer() {
           <p>
             Designed by <span className="text-highlight">Saahil</span>
           </p>
+          <iframe src="https://webring.phthallo.com/api/widgets/1?format=minimal&style=text-align:center" />
           <a href="https://ctp-webr.ing/neon/previous" className="font-bold">
             &larr;
           </a>
