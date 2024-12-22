@@ -1,0 +1,13 @@
+========================================
+Hi welcome to my site?! or curled version
+My name is Saahil Dutta and i am from the USA
+I am a 10th grader in KCD.
+Apart from coding, some other activities that I love to do!
+Playing Games,  Eating different types of food,  Robotics.
+I started programming during the Covid Pandemic in 2020
+I am fluent in new like programming languages such as CSS , HTML, Javascript and Typescript.
+My field of Interest's are building new Web Technologies and Products and also in areas related toBackend Services, CLI Services.
+Whenever possible, I also apply my passion for developing products with
+Node.js and Modern Javascript Library and Frameworks like React.js
+You can find the signature for this message in saahild.com/sig.txt
+========================================
