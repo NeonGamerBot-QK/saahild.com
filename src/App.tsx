@@ -10,8 +10,10 @@ import GithubStats from './components/AboutPage/Github'
 import Projects from './components/Projects'
 import Page404 from './components/static/404'
 import ContactPage from './components/ContactPage'
+import ReWork from './components/ReWork'
 
 function App ({ analytics }: any) {
+  return <ReWork />
   return (
     <HashRouter>
       <Route path={'#/'} index component={<div style={{ zIndex: 9999 }}>
