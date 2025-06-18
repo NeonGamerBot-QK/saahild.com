@@ -31,14 +31,10 @@ import "./skillset.css";
 // import { SiKalilinux, SiPostman } from "react-icons/si";
 import { mdiArch, mdiConsole, mdiLinux, mdiUbuntu } from "@mdi/js";
 export function SkillSet() {
-  return (
-   <p>meow</p>
-  );
+  return <p>meow</p>;
 }
 export function TechStack() {
-  return (
-     <p>meow</p>
-  );
+  return <p>meow</p>;
 }
 export default function () {
   return (
