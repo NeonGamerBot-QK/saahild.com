@@ -1,14 +1,10 @@
-import { SiDiscord, SiReplit } from "react-icons/si";
-import { FaKey } from "react-icons/fa";
 import Icon from "../static/Icons";
 import { git, npm } from "../static/icons_list";
 import bento from "../../assets/bento.svg";
 import tor from "../../assets/tor.svg";
 import "./index.css";
 import { useEffect, useState } from "react";
-import { LuGlobe, LuKey } from "react-icons/lu";
 // import { FaCodeCommit} fr
-import { FaCodeCommit, FaRocket } from "react-icons/fa6";
 const isDev = process.env.NODE_ENV !== "production";
 
 type DiscordStatus = "dnd" | "idle" | "online" | "offline";
@@ -124,7 +120,7 @@ export default function Footer() {
               className="badge mauve p-2 lg:visible hidden"
               style={{ background: "var(--surface1)" }}
             >
-              <FaKey style={{ marginRight: "5px" }} /> {fingerprint}
+            {fingerprint}
             </div>
           </a>
           <a
@@ -156,10 +152,8 @@ export default function Footer() {
             </div>
           </a>
           <a href="https://github.com/NeonGamerBot-QK" target="_blank">
-            <Icon icon={git} />
           </a>
           <a href="https://www.npmjs.com/~neongamerbot" target="_blank">
-            <Icon icon={npm} />
           </a>
           <div className="inline-flex gap-2 bottom mt-1">
             <a
@@ -179,7 +173,6 @@ export default function Footer() {
               target="_blank"
               className="inline-flex"
             >
-              <Icon icon={bento} width={16} height={16} />{" "}
             </a>
             {lanyardData ? (
               <a href="https://discord.com/users/566766267046821888">
@@ -199,7 +192,6 @@ export default function Footer() {
             </a>
           ) : (
             <a href="https://ohdhie7qka42mvxcl2lb5bcxw6jumwn6lbqdmpli3xxhktvyqg2gtryd.onion/">
-              <Icon icon={tor} />
             </a>
           )}
 
