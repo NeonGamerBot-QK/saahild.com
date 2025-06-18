@@ -133,7 +133,7 @@ export default function Footer() {
               className="badge mauve p-2 md:visible invisible"
               style={{ background: "var(--surface1)" }}
             >
-              <FaCodeCommit style={{ marginRight: "5px" }} />{" "}
+              {" "}
               {process.env.REACT_APP_BUILD_SHA}
             </div>
           </a>
@@ -147,7 +147,7 @@ export default function Footer() {
               className="badge mauve p-2 md:visible invisible"
               style={{ background: "var(--surface1)" }}
             >
-              <FaRocket style={{ marginRight: "5px" }} />{" "}
+       
               {process.env.REACT_APP_BUILD_ID}
             </div>
           </a>
@@ -159,12 +159,7 @@ export default function Footer() {
               target="_blank"
               className="inline-flex"
             >
-              <SiReplit
-                className="inline-flex hover:scale-125 duration-500 linear"
-                height="16"
-                width="16"
-                fill="var(--maroon)"
-              />
+              
             </a>
             <a
               href="https://bento.me/saahil"
@@ -173,19 +168,13 @@ export default function Footer() {
             ></a>
             {lanyardData ? (
               <a href="https://discord.com/users/566766267046821888">
-                <SiDiscord
-                  fill={
-                    lanyardData.kv.is_disabled
-                      ? "var(--mauve)"
-                      : getFillColor(lanyardData.discord_status)
-                  }
-                />
+              <p>m</p>
               </a>
             ) : null}
           </div>
           {window.location.hostname.includes(".onion") ? (
             <a href="http://saahild.com/">
-              <LuGlobe stroke="var(--mauve)" />
+             <p>globe</p>
             </a>
           ) : (
             <a href="https://ohdhie7qka42mvxcl2lb5bcxw6jumwn6lbqdmpli3xxhktvyqg2gtryd.onion/"></a>
