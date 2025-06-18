@@ -147,7 +147,6 @@ export default function Footer() {
               className="badge mauve p-2 md:visible invisible"
               style={{ background: "var(--surface1)" }}
             >
-       
               {process.env.REACT_APP_BUILD_ID}
             </div>
           </a>
@@ -158,9 +157,7 @@ export default function Footer() {
               href="https://replit.com/@NeonGamerBotQK"
               target="_blank"
               className="inline-flex"
-            >
-              
-            </a>
+            ></a>
             <a
               href="https://bento.me/saahil"
               target="_blank"
@@ -168,13 +165,13 @@ export default function Footer() {
             ></a>
             {lanyardData ? (
               <a href="https://discord.com/users/566766267046821888">
-              <p>m</p>
+                <p>m</p>
               </a>
             ) : null}
           </div>
           {window.location.hostname.includes(".onion") ? (
             <a href="http://saahild.com/">
-             <p>globe</p>
+              <p>globe</p>
             </a>
           ) : (
             <a href="https://ohdhie7qka42mvxcl2lb5bcxw6jumwn6lbqdmpli3xxhktvyqg2gtryd.onion/"></a>
