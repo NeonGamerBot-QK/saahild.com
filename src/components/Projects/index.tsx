@@ -57,10 +57,10 @@ export default function Projects() {
   const fetchData = () => {
     return Promise.all([
       fetch(
-        `https://api.github.com/users/NeonGamerBot-QK/repos?per_page=100`
+        `https://api.github.com/users/NeonGamerBot-QK/repos?per_page=100`,
       ).then((response) => response.json()),
       fetch(
-        `https://api.github.com/users/NeonGamerBot-QK/repos?per_page=100?page=2`
+        `https://api.github.com/users/NeonGamerBot-QK/repos?per_page=100?page=2`,
       ).then((response) => response.json()),
     ]).then((data) => {
       if (process.env.NODE_ENV !== "production") console.log(data[0], data[1]);
@@ -137,7 +137,7 @@ export default function Projects() {
                             {d.topics
                               .filter(
                                 (e: string) =>
-                                  !e.includes("github-include-on-site")
+                                  !e.includes("github-include-on-site"),
                               )
                               .map((topic: string, i: number) => {
                                 return (
