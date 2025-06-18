@@ -244,14 +244,14 @@ export function TechStack() {
               className={"tech-icons inline-flex mauve"}
               style={{ color: "var(--mauve)" }}
             >
-{/*               <SiPostman /> */}
+              {/*               <SiPostman /> */}
             </div>
             <div
               className={"tech-icons inline-flex mauve"}
               style={{ color: "var(--mauve)" }}
             >
               {" "}
-{/*               <SiKalilinux /> */}
+              {/*               <SiKalilinux /> */}
             </div>
             {/* <div className={"tech-icons inline-flex mauve"} style={{ color: "var(--mauve)"}}><MIcon path={mdiKaliLinux} size={2} className='w-full m-5' /></div> */}
           </div>
