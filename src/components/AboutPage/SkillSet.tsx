@@ -29,7 +29,7 @@ import {
   visualStudio,
 } from "../static/icons_list";
 import "./skillset.css";
-import { SiKalilinux, SiPostman } from "react-icons/si";
+// import { SiKalilinux, SiPostman } from "react-icons/si";
 import { mdiArch, mdiConsole, mdiLinux, mdiUbuntu } from "@mdi/js";
 export function SkillSet() {
   return (
@@ -244,14 +244,14 @@ export function TechStack() {
               className={"tech-icons inline-flex mauve"}
               style={{ color: "var(--mauve)" }}
             >
-              <SiPostman />
+{/*               <SiPostman /> */}
             </div>
             <div
               className={"tech-icons inline-flex mauve"}
               style={{ color: "var(--mauve)" }}
             >
               {" "}
-              <SiKalilinux />
+{/*               <SiKalilinux /> */}
             </div>
             {/* <div className={"tech-icons inline-flex mauve"} style={{ color: "var(--mauve)"}}><MIcon path={mdiKaliLinux} size={2} className='w-full m-5' /></div> */}
           </div>
