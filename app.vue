@@ -1,5 +1,9 @@
+<script>
+import Backdrop from "./components/Backdrop.vue";
+</script>
 <template>
   <div>
-       <router-view />
+    <Backdrop />
+    <router-view />
   </div>
 </template>
