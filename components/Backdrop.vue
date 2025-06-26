@@ -20,7 +20,7 @@ class Char {
   draw() {
     const distToCursor = Math.hypot(
       this.x - cursor.value.x,
-      this.y - cursor.value.y
+      this.y - cursor.value.y,
     );
 
     const highlight = Math.max(0, 0.5 - distToCursor / 250);
@@ -66,7 +66,7 @@ const init = () => {
   const minColumns = 15; // Ensure at least this many columns on mobile
   const columns = Math.max(
     minColumns,
-    Math.floor(window.innerWidth / columnSpacing)
+    Math.floor(window.innerWidth / columnSpacing),
   );
 
   // Adjust rows based on screen height
@@ -75,7 +75,7 @@ const init = () => {
   const maxRows = 25; // Cap for performance on large screens
   const rows = Math.min(
     maxRows,
-    Math.max(minRows, Math.floor(window.innerHeight / rowSpacing))
+    Math.max(minRows, Math.floor(window.innerHeight / rowSpacing)),
   );
 
   chars = [];
@@ -84,7 +84,7 @@ const init = () => {
       const x = i * (window.innerWidth / columns); // Evenly distribute columns
       const y = j * rowSpacing - Math.random() * window.innerHeight;
       const char = String.fromCharCode(
-        0x2729 + Math.floor(Math.random() * 706)
+        0x2729 + Math.floor(Math.random() * 706),
       );
       chars.push(new Char(x, y, char));
     }
