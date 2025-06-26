@@ -23,5 +23,8 @@
     "tailwindcss": "^4.1.10",
     "vue": "^3.5.16",
     "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@iconify-json/catppuccin": "^1.2.11"
   }
 }
