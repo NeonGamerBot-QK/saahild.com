@@ -30,6 +30,12 @@
             class="text-2xl hover:scale-110 transition-transform duration-300"
           />
         </a>
+        <a href="./canary.txt">
+          <Icon
+            name="mdi:check-circle"
+            class="text-2xl hover:scale-110 transition-transform duration-300"
+          />
+        </a>
         <!-- <Icon name="catppuccin:folder-queue" class="text-2xl" /> -->
         <a>
           <!-- <img

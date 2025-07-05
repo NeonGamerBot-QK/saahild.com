@@ -1,0 +1,42 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Hi im saahil (also known as Neon, neongamerbot)
+
+I own saahild.com which can be verified by running:
+dig -t txt +short _canary_verf.saahild.com
+
+which will return: ownedbyneon
+
+I am alive with a beating heart and am not a robot.
+
+I am under the control of the PGP key with the fingerprint: FDE995C28C7EE56337643A768A8B64515254CFC6
+
+You can fetch my key by running:
+gpg --keyserver hkps://keys.openpgp.org --recv-keys FDE995C28C7EE56337643A768A8B64515254CFC6
+
+You can also find it on https://saahild.com/creds/public.pgp.txt
+
+Today is June 30th 2025.
+
+I will attempt to reverify this message within the next 90 days.
+This message is signed with my PGP key. You can verify it by running:
+
+gpg --keyserver hkps://keys.openpgp.org --recv-keys FDE995C28C7EE56337643A768A8B64515254CFC6
+gpg --verify canary.txt
+
+It should return with "Good signature" proving this message is valid and not tampered with.
+-----BEGIN PGP SIGNATURE-----
+
+iQGzBAEBCAAdFiEE/emVwox+5WM3ZDp2iotkUVJUz8YFAmhiGvUACgkQiotkUVJU
+z8YOsQv9HORswgdlmxsOKGIj4oi3j5kcZ4CxmRdEbmVuevJfKHGnqiMGeXd45riT
+b/4cQJ5WBfUXnby5rk8ums1QobNBUUa6YKpeM5UOoiCryJqQVABsws3jucfalWdl
+XtT6WipAbd2pVEpvIKeEtRqKJHRMl9iBlmJLXqjroT12IiIA3r9WsCdPBVQqFdvF
+9GfotOongVcjR1W7i6/aqj352bmjHSnaZE3WyBvUSPZvC1KjiljRP4QbOa1r46NO
+HlZ18pLUtMPHthGH+pcFWBCdd7BFgFWMxkw9goZx6Q1f5zGRLbWt4nBLJcRcenPF
+mXTOfxBDFC6I0k1TxGydkKzd6oDylZIf4pJ+6Djob7vuPFUcbxk/+IIqYfQXoV7o
+ujNKEooJ62/PF2b7Jdps3UrpTSxPsoWKYSDQfI3yYm8C/igh9U6U/f/0FRukte6O
+6DshJMxJtJ60Cz4dWWlmk5VeR5APuYXzChJcYc5of5ZaiI8QTdsRkOxCojqe61fz
+f6Ja7UY0
+=nCnG
+-----END PGP SIGNATURE-----
