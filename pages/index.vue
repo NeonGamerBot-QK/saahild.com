@@ -1,1 +1,3 @@
-<template>meow</template>
+<template>
+  <BigTextMain />
+</template>
