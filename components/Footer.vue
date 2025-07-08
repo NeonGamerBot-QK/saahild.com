@@ -7,7 +7,7 @@
         Made by Neon - Copyright {{ new Date().getFullYear() }}.
         <br />
         <br />
-        Freedom of speech is a fundamental human right.
+        Free speech & Privacy is a fundamental human right.
       </p>
     </aside>
     <nav>
