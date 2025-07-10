@@ -22,8 +22,13 @@
           tabindex="0"
           class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
         >
-          <li><a>Item 1</a></li>
-          <li><a>Item 3</a></li>
+          <li>
+            <a>
+              <Icon name="catppuccin:folder-queue" class="text-2xl" />
+              About me</a
+            >
+          </li>
+          <li><a>Webrings</a></li>
         </ul>
       </div>
       <a class="btn btn-ghost text-xl">saahild.com</a>
@@ -33,8 +38,13 @@
     </div> -->
     <div class="navbar-end">
       <ul class="menu menu-horizontal px-1 hidden lg:flex">
-        <li><a>Item 1</a></li>
-        <li><a>Item 3</a></li>
+        <li>
+          <a> <Icon name="catppuccin:text" class="text-2xl" />About me</a>
+        </li>
+        <!-- it looks close enough to a ring -->
+        <li>
+          <a><Icon name="catppuccin:webpack" class="text-2xl" />Webrings</a>
+        </li>
       </ul>
     </div>
   </div>
