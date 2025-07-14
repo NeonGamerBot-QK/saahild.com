@@ -39,11 +39,35 @@
     <div class="navbar-end">
       <ul class="menu menu-horizontal px-1 hidden lg:flex">
         <li>
-          <a> <Icon name="catppuccin:text" class="text-2xl" />About me</a>
+          <a href="/about">
+            <Icon name="catppuccin:text" class="text-2xl" />About me</a
+          >
+        </li>
+        <li>
+          <a href="/projects">
+            <Icon name="catppuccin:folder" class="text-2xl" />Projects</a
+          >
         </li>
         <!-- it looks close enough to a ring -->
         <li>
-          <a><Icon name="catppuccin:webpack" class="text-2xl" />Webrings</a>
+          <a href="/buttons"
+            ><Icon name="catppuccin:webpack" class="text-2xl" />Webrings</a
+          >
+        </li>
+        <li>
+          <a href="/contact.html"
+            ><Icon name="catppuccin:readme" class="text-2xl" />Contact</a
+          >
+        </li>
+        <li>
+          <a href="/donate.html"
+            ><Icon
+              name="donate"
+              class="text-2xl"
+              v-umami="{ name: 'Navbar-Donate', external: true }"
+            />
+            <Icon name="catppuccin:certificate" class="text-2xl"/>
+            Donate</a>
         </li>
       </ul>
     </div>

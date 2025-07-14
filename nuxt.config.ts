@@ -15,7 +15,22 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "@nuxt/icon",
     "@nuxt/image",
+    "nuxt-umami",
   ],
+
+  umami: {
+    id: "ee9a2efa-f5af-496f-8e37-b8fe9e1e8ec2",
+    host: 'https://cloud.umami.is',
+    autoTrack: true,
+    // proxy: 'cloak',
+    useDirective: true,
+    ignoreLocalhost: false,
+    // excludeQueryParams: false,
+    // domains: ['cool-site.app', 'my-space.site'],
+    // customEndpoint: '/my-custom-endpoint',
+    // enabled: false,
+    logErrors: true,
+  },
   vite: {
     plugins: [tailwindcss()],
   },
