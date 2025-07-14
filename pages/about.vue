@@ -1,3 +1,1 @@
-<template>
-    About who?
-</template>
+<template>About who?</template>
