@@ -66,8 +66,9 @@
               class="text-2xl"
               v-umami="{ name: 'Navbar-Donate', external: true }"
             />
-            <Icon name="catppuccin:certificate" class="text-2xl"/>
-            Donate</a>
+            <Icon name="catppuccin:certificate" class="text-2xl" />
+            Donate</a
+          >
         </li>
       </ul>
     </div>
