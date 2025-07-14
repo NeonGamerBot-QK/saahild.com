@@ -3,7 +3,8 @@
 // oneko.js: https://github.com/adryd325/oneko.js
 
 export function injectOneko() {
-  const isReducedMotion =    window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+  const isReducedMotion =
+    window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
 
   if (isReducedMotion) return;
 
@@ -17,7 +18,7 @@ export function injectOneko() {
 
   let frameCount = 0;
   let idleTime = 0;
-  let idleAnimation:any = null;
+  let idleAnimation: any = null;
   let idleAnimationFrame = 0;
 
   const nekoSpeed = 10;
@@ -96,10 +97,10 @@ export function injectOneko() {
     nekoEl.style.top = `${nekoPosY - 16}px`;
     nekoEl.style.zIndex = "99999999";
 
-    let nekoFile = "https://saahild.com/oneko.gif"
-    const curScript = document.currentScript
+    let nekoFile = "https://saahild.com/oneko.gif";
+    const curScript = document.currentScript;
     if (curScript && curScript.dataset.cat) {
-      nekoFile = curScript.dataset.cat
+      nekoFile = curScript.dataset.cat;
     }
     nekoEl.style.backgroundImage = `url(${nekoFile})`;
 
@@ -113,7 +114,7 @@ export function injectOneko() {
     window.requestAnimationFrame(onAnimationFrame);
   }
 
-  let lastFrameTimestamp: any ;
+  let lastFrameTimestamp: any;
 
   function onAnimationFrame(timestamp: any) {
     // Stops execution if the neko element is removed from DOM
@@ -124,8 +125,8 @@ export function injectOneko() {
       lastFrameTimestamp = timestamp;
     }
     if (timestamp - lastFrameTimestamp > 100) {
-      lastFrameTimestamp = timestamp
-      frame()
+      lastFrameTimestamp = timestamp;
+      frame();
     }
     window.requestAnimationFrame(onAnimationFrame);
   }
@@ -165,7 +166,7 @@ export function injectOneko() {
       }
       idleAnimation =
         avalibleIdleAnimations[
-        Math.floor(Math.random() * avalibleIdleAnimations.length)
+          Math.floor(Math.random() * avalibleIdleAnimations.length)
         ];
     }
 
@@ -206,9 +207,9 @@ export function injectOneko() {
     const centerY = rect.top + rect.height / 2 + scrollTop;
 
     for (let i = 0; i < 10; i++) {
-      const heart = document.createElement('div');
-      heart.className = 'heart';
-      heart.textContent = '❤';
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.textContent = "❤";
       const offsetX = (Math.random() - 0.5) * 50;
       const offsetY = (Math.random() - 0.5) * 50;
       heart.style.left = `${centerX + offsetX - 16}px`;
@@ -222,7 +223,7 @@ export function injectOneko() {
     }
   }
 
-  const style = document.createElement('style');
+  const style = document.createElement("style");
   style.innerHTML = `
 		  @keyframes heartBurst {
 			  0% { transform: scale(0); opacity: 1; }
@@ -238,7 +239,7 @@ export function injectOneko() {
 	  `;
 
   document.head.appendChild(style);
-  nekoEl.addEventListener('click', explodeHearts);
+  nekoEl.addEventListener("click", explodeHearts);
 
   function frame() {
     frameCount += 1;
@@ -283,5 +284,5 @@ export function injectOneko() {
 }
 
 export function stopOneko() {
-  return document.getElementById('oneko')?.remove()
+  return document.getElementById("oneko")?.remove();
 }
