@@ -1,8 +1,19 @@
-<script>
+<script setup>
 import Backdrop from "./components/Backdrop.vue";
 import Footer from "./components/Footer.vue";
+// import "./lib/jsscripts/index.ts";
 import Navbar from "./components/Navbar.vue";
-import "./lib/jsscripts/index.ts";
+useHead({
+  noscript: [
+    {
+      children: `
+  <meta http-equiv="refresh" content="0; url=https://saahild.com/retro" />
+      `
+    }
+  ]
+})
+</script>
+<script>
 </script>
 <!-- <script
   defer
@@ -16,6 +27,7 @@ html {
 }
 </style>
 <template>
+
   <div>
     <Navbar />
     <Backdrop />

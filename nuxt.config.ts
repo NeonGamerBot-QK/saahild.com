@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   target: "static",
   // make static output
-  ssr: false,
+  ssr: true,
   nitro: {
     preset: "static",
   },
