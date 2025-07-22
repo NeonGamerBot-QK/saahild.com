@@ -31,7 +31,7 @@
           <li><a>Webrings</a></li>
         </ul>
       </div>
-      <a class="btn btn-ghost text-xl">saahild.com</a>
+      <a class="btn btn-ghost text-xl" href="./">saahild.com</a>
     </div>
     <!-- <div class="navbar-center hidden lg:flex">
      
