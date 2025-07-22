@@ -8,13 +8,12 @@ useHead({
     {
       children: `
   <meta http-equiv="refresh" content="0; url=https://saahild.com/retro" />
-      `
-    }
-  ]
-})
+      `,
+    },
+  ],
+});
 </script>
-<script>
-</script>
+<script></script>
 <!-- <script
   defer
   src="https://cloud.umami.is/script.js"
@@ -27,7 +26,6 @@ html {
 }
 </style>
 <template>
-
   <div>
     <Navbar />
     <Backdrop />
