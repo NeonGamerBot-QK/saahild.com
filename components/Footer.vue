@@ -15,7 +15,7 @@
         <!-- Social icons go here -->
         <!-- TODO: make sure the bento icon is here, pgp, and canary and source link -->
         <a
-          href="https://github.com/saahild.com"
+          href="https://github.com/NeonGamerBot-QK/saahild.com"
           target="_blank"
           rel="noopener noreferrer"
         >

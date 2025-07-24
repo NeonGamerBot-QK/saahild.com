@@ -1,9 +1,13 @@
 <script setup>
 import Backdrop from "./components/Backdrop.vue";
 import Footer from "./components/Footer.vue";
-// import "./lib/jsscripts/index.ts";
 import Navbar from "./components/Navbar.vue";
+import "./lib/jsscripts/index.ts";
 useHead({
+  title: "Saahils Site",
+  meta: {
+    
+  },
   noscript: [
     {
       children: `
