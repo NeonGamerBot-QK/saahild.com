@@ -1,5 +1,5 @@
 <script setup>
-let spotify_link = `https://spotify-github-profile.kittinanx.com/api/view?uid=saahil.d&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&bar_color=b6494d&bar_color_cover=true`;
+let spotify_link = `https://spotify-github-profile.kittinanx.com/api/view?uid=saahil.d&cover_image=true&theme=default&show_offline=true&background_color=121212&interchange=false&bar_color=b6494d&bar_color_cover=true`;
 </script>
 <template>
   <div class="flex items-center justify-between mt-20 px-20">

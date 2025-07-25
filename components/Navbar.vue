@@ -22,13 +22,36 @@
           tabindex="0"
           class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
         >
-          <li>
-            <a>
-              <Icon name="catppuccin:folder-queue" class="text-2xl" />
-              About me</a
-            >
-          </li>
-          <li><a>Webrings</a></li>
+ <li>
+          <a href="/about">
+            <Icon name="catppuccin:text" class="text-2xl" />About me</a
+          >
+        </li>
+        <li>
+          <a href="/projects">
+            <Icon name="catppuccin:folder" class="text-2xl" />Projects</a
+          >
+        </li>
+        <!-- it looks close enough to a ring -->
+        <li>
+          <a href="/buttons"
+            ><Icon name="catppuccin:webpack" class="text-2xl" />Webrings</a
+          >
+        </li>
+        <li>
+          <a href="/contact.html"
+            ><Icon name="catppuccin:readme" class="text-2xl" />Contact</a
+          >
+        </li>
+        <li>
+          <!-- <Icon
+              name="donate"
+              class="text-2xl"
+              v-umami="{ name: 'Navbar-Donate', external: true }"
+            /> -->
+          <a href="/donate.html"
+            ><Icon name="catppuccin:certificate" class="text-2xl" />Donate</a>
+        </li>
         </ul>
       </div>
       <a class="btn btn-ghost text-xl" href="./">saahild.com</a>
