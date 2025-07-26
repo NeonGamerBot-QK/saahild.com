@@ -36,6 +36,16 @@ useHead({
       content: "dark",
     },
   ],
+  link: [
+    {
+      rel: "preload",
+      href: "https://saahild.com/buttons/"
+    },
+    {
+      rel: "me",
+      href: "https://mastodon.social/@neongamerbot",
+    }
+  ],
   noscript: [
     {
       children: `
@@ -45,7 +55,6 @@ useHead({
   ],
 });
 </script>
-<script></script>
 <!-- <script
   defer
   src="https://cloud.umami.is/script.js"

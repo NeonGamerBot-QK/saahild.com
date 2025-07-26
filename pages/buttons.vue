@@ -153,6 +153,9 @@ let ring = [
   {
     src: "922a9f7700a81a7f2eef329870afa934.gif",
   },
+  {
+    src: "653d8c992fe0190456286de2b4877f9e.gif"
+  }
 ];
 console.log(ring);
 </script>

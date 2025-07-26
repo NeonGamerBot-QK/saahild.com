@@ -7,7 +7,7 @@
         Made by Neon - Copyright {{ new Date().getFullYear() }}.
         <br />
         <br class="hidden sm:block" />
-        Free speech & Privacy is a fundamental human right.
+        <a href="https://archive.is/450yM"><b>Free speech</b></a> & <a href="https://en.wikipedia.org/wiki/Privacy"><b>Privacy</b></a> is a fundamental human right.
       </p>
     </aside>
     <nav>

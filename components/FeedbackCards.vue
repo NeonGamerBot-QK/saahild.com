@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-right items-right">
+  <div class="sm:flex sm:justify-right sm:items-right mt-30 sm:ml-0 ml-2">
     <div
       class="relative w-80 h-96"
       @click="rotateStack"
@@ -18,6 +18,7 @@
         }"
       >
         <div class="card-body">
+          <img :src="card.avatar" class="avatar w-12 h-12 rounded-full"/>
           <h2 class="card-title">{{ card.title }}</h2>
           <p>{{ card.text }}</p>
         </div>
