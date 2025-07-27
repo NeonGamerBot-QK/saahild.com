@@ -1,7 +1,7 @@
 <template>
-  <footer
-    class="footer sm:footer-horizontal bg-[#1e1e2e] text-neutral-content p-2 sm:p-5 shadow-lg rounded-lg absolute bottom-0 sm:bottom-4 left-1/2 sm:transform -translate-x-1/2 sm:w-1/3 max-w-screen-lg"
-  >
+ <footer
+  class="fixed bottom-0 left-1/2 transform -translate-x-1/2 footer sm:footer-horizontal bg-[#1e1e2e] text-neutral-content p-2 sm:p-5 shadow-lg rounded-lg sm:w-1/3 max-w-screen-lg w-full"
+>
     <aside>
       <p class="font-mono font-small">
         Made by Neon - Copyright {{ new Date().getFullYear() }}.

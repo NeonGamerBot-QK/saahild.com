@@ -47,7 +47,7 @@ function calcOption() {
       i like mostly coding in my freetime, messing with bugs, watching anime and
       sleeping
     </li>
-    <li>i also like eating lots of food and playing vite games!</li>
+    <li>i also like eating lots of food and playing video games!</li>
   </ul>
 </div>
 </template>

@@ -70,7 +70,9 @@ html {
   <div>
     <Navbar />
     <Backdrop />
+    <div class="flex-grow">
     <router-view />
+    </div>
     <Footer />
   </div>
 </template>
