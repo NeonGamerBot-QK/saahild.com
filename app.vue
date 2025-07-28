@@ -39,12 +39,12 @@ useHead({
   link: [
     {
       rel: "preload",
-      href: "https://saahild.com/buttons/"
+      href: "https://saahild.com/buttons/",
     },
     {
       rel: "me",
       href: "https://mastodon.social/@neongamerbot",
-    }
+    },
   ],
   noscript: [
     {
@@ -71,7 +71,7 @@ html {
     <Navbar />
     <Backdrop />
     <div class="flex-grow">
-    <router-view />
+      <router-view />
     </div>
     <Footer />
   </div>
