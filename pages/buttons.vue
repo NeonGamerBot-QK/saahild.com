@@ -161,6 +161,9 @@ let ring = [
   {
     src: "653d8c992fe0190456286de2b4877f9e.gif",
   },
+  {
+    src: "nest.png"
+  }
 ];
 console.log(ring);
 function randomStyle() {

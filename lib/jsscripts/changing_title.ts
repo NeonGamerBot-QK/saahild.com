@@ -17,7 +17,7 @@ export function runTitle() {
       window.document.documentElement.style.filter = "";
     } else {
       document.title = "Come Back :(";
-      if (!isDev) window.document.documentElement.style.filter = "blur(30px)";
+      // if (!isDev) window.document.documentElement.style.filter = "blur(30px)";
     }
   }, 200);
 }

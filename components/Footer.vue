@@ -15,7 +15,6 @@
     <nav>
       <div class="grid grid-flow-col gap-2">
         <!-- Social icons go here -->
-        <!-- TODO: make sure the bento icon is here, pgp, and canary and source link -->
         <a
           href="https://github.com/NeonGamerBot-QK/saahild.com"
           target="_blank"
@@ -37,14 +36,6 @@
             name="mdi:check-circle"
             class="text-2xl hover:scale-110 transition-transform duration-300"
           />
-        </a>
-        <!-- <Icon name="catppuccin:folder-queue" class="text-2xl" /> -->
-        <a>
-          <!-- <img
-            src="/bento.svg"
-            alt="Bento Icon"
-            class="w-8 h-8 hover:scale-110 transition-transform duration-300"
-          /> -->
         </a>
       </div>
     </nav>
