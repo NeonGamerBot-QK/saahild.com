@@ -18,7 +18,7 @@
         }"
       >
         <div class="card-body">
-          <img :src="card.avatar" class="avatar w-12 h-12 rounded-full"/>
+          <img :src="card.avatar" class="avatar w-12 h-12 rounded-full" />
           <h2 class="card-title">{{ card.title }}</h2>
           <p>{{ card.text }}</p>
         </div>
