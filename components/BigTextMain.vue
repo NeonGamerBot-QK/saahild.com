@@ -2,10 +2,10 @@
 let spotify_link = `https://spotify-github-profile.kittinanx.com/api/view?uid=saahil.d&cover_image=true&theme=default&show_offline=true&background_color=121212&interchange=false&bar_color=b6494d&bar_color_cover=true`;
 </script>
 <template>
-  <div class="flex items-center justify-between mt-20 px-20">
+  <div class="flex items-center justify-between md:mt-20 md:px-20 mt-10 px-10">
     <div>
-      <img src="/neonspfp.png" height="200" width="200" class="pb-5" />
-      <h1 class="font-bold text-5xl">
+      <img src="/neonspfp.png" class="md:pb-5 pb-2 md:h-[200px] md:w-[200px] h-[100px] w-[100px]" />
+      <h1 class="font-bold md:text-5xl text-2xl">
         <svg
           class="h-9 w-9 lg:h-10 lg:w-10 xl:h-12 xl:w-12 inline-block align-bottom"
           style="color: #cba6f7"
@@ -61,7 +61,7 @@ let spotify_link = `https://spotify-github-profile.kittinanx.com/api/view?uid=sa
 
     <!-- Right: Spotify Image -->
     <div>
-      <img :src="spotify_link" alt="Saahil's Spotify" class="mt-5" />
+      <img :src="spotify_link" alt="Saahil's Spotify" class="mt-5 hidden md:block" />
     </div>
   </div>
 </template>
