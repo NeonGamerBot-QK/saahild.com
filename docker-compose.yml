@@ -1,7 +1,0 @@
-name: <your project name>
-services:
-  <to-change-here>:
-    ports:
-      - 3000:80
-    container_name: saahildcom
-    image: <to-change-here>:latest

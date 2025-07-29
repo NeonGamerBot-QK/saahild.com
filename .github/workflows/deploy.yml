@@ -35,7 +35,4 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd /${{ secrets.USERNAME }}
-            export REACT_APP_BUILD_SHA=${{ steps.short_sha.outputs.short_sha }}
-            export REACT_APP_BUILD_ID=${{ github.run_id }}
-            export REACT_APP_BUILD_NUM=${{ github.run_number }}
             bash ./deploy.sh ${{ github.event.repository.name }}

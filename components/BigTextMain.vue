@@ -5,7 +5,7 @@ let spotify_link = `https://spotify-github-profile.kittinanx.com/api/view?uid=sa
   <div class="flex items-center justify-between mt-20 px-20">
     <div>
       <img
-        src="https://avatars.githubusercontent.com/u/58448036?v=4"
+        src="./neonspfp.png"
         height="200"
         width="200"
         class="pb-5"
