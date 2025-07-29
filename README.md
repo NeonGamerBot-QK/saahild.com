@@ -4,7 +4,6 @@
 
 This is my website portfolio made in nuxt + vue + daisyui!
 
-
 ## Setup
 
 Make sure to install dependencies:
