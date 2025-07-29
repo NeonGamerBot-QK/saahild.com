@@ -162,8 +162,8 @@ let ring = [
     src: "653d8c992fe0190456286de2b4877f9e.gif",
   },
   {
-    src: "nest.png"
-  }
+    src: "nest.png",
+  },
 ];
 function randomStyle() {
   const delay = Math.floor(Math.random() * 800); // 0–800ms
