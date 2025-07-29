@@ -54,9 +54,12 @@ useHead({
     },
   ],
 });
-umTrackEvent("app-load")
-if(process.client) {
-umTrackView(location.pathname, new URLSearchParams(location.search).get("r") || "none")
+umTrackEvent("app-load");
+if (process.client) {
+  umTrackView(
+    location.pathname,
+    new URLSearchParams(location.search).get("r") || "none",
+  );
 
   umIdentify({
     semi_perm_id: localStorage.getItem("semi_perm_id")
@@ -86,9 +89,9 @@ html {
     <Navbar />
     <Backdrop />
     <div class="flex-grow">
- <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+      <NuxtLayout>
+        <NuxtPage />
+      </NuxtLayout>
     </div>
     <Footer />
   </div>
