@@ -49,11 +49,11 @@ let cards = [
       <div>
         <AboutMe />
       </div>
-      <div class="md:mr-10">
+      <div class="md:mr-10 hidden sm:block">
         <FeedbackCards :cards="cards" />
       </div>
     </div>
-    <div class="-mt-30 hidden sm:block">
+    <div class="-mt-30 hidden md:block">
       <SnakeGrid />
     </div>
   </div>
