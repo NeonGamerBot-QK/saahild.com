@@ -4,12 +4,7 @@ let spotify_link = `https://spotify-github-profile.kittinanx.com/api/view?uid=sa
 <template>
   <div class="flex items-center justify-between mt-20 px-20">
     <div>
-      <img
-        src="./neonspfp.png"
-        height="200"
-        width="200"
-        class="pb-5"
-      />
+      <img src="./neonspfp.png" height="200" width="200" class="pb-5" />
       <h1 class="font-bold text-5xl">
         <svg
           class="h-9 w-9 lg:h-10 lg:w-10 xl:h-12 xl:w-12 inline-block align-bottom"
