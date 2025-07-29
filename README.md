@@ -1,6 +1,9 @@
-# Nuxt Minimal Starter
+![screenshot](./public/screenshot.png)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## My portfolio
+
+This is my website portfolio made in nuxt + vue + daisyui!
+
 
 ## Setup
 
