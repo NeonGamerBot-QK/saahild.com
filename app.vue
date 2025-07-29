@@ -54,6 +54,21 @@ useHead({
     },
   ],
 });
+umTrackEvent("app-load")
+if(process.client) {
+umTrackView(location.pathname, new URLSearchParams(location.search).get("r") || "none")
+
+  umIdentify({
+    semi_perm_id: localStorage.getItem("semi_perm_id")
+      ? localStorage.getItem("semi_perm_id")
+      : (localStorage.semi_perm_id =
+          Math.random().toString(36).substring(2, 15) +
+          Math.random().toString(36).substring(2, 15)),
+    temp_id: Date.now() + Math.random().toString(36).substring(2, 15),
+    user_agent: navigator.userAgent,
+  });
+  // alert("ts")
+}
 </script>
 <!-- <script
   defer
@@ -71,7 +86,9 @@ html {
     <Navbar />
     <Backdrop />
     <div class="flex-grow">
-      <router-view />
+ <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
     </div>
     <Footer />
   </div>

@@ -165,7 +165,6 @@ let ring = [
     src: "nest.png"
   }
 ];
-console.log(ring);
 function randomStyle() {
   const delay = Math.floor(Math.random() * 800); // 0–800ms
   const duration = 1000 + Math.floor(Math.random() * 1000); // 1000–2000ms

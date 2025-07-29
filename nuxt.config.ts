@@ -17,7 +17,6 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "nuxt-umami",
   ],
-
   umami: {
     id: "ee9a2efa-f5af-496f-8e37-b8fe9e1e8ec2",
     host: "https://cloud.umami.is",
