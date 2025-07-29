@@ -45,7 +45,7 @@ watch(
 );
 
 const displayedCards = computed(() => [...cards.value].reverse());
-let timeSinceLastRotation = Date.now()
+let timeSinceLastRotation = Date.now();
 function rotateStack() {
   const top = cards.value.shift();
   cards.value.push(top);
@@ -53,7 +53,7 @@ function rotateStack() {
   umTrackEvent("rotateStack-about", {
     cardId: top.id,
     timeSinceLastRotation: timeSinceLastRotation,
-  })
+  });
 }
 
 let touchStartX = 0;
