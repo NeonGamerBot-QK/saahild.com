@@ -1,58 +1,30 @@
 {
-  "name": "saahild.com",
-  "version": "0.1.0",
+  "name": "nuxt-app",
   "private": true,
-  "dependencies": {
-    "@mdi/js": "^7.4.47",
-    "@mdi/react": "^1.6.1",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.98",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "ackee-tracker": "^5.1.0",
-    "animate.css": "^4.1.1",
-    "react": "^18.2.0",
-    "react-animate-on-scroll": "^2.1.9",
-    "react-dom": "^18.2.0",
-    "react-icons": "^5.2.1",
-    "react-parallax-tilt": "^1.7.224",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
-    "typewriter-effect": "^2.21.0",
-    "web-vitals": "^2.1.4"
-  },
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build:react": "react-scripts build",
-    "build": "bun run scripts/build.ts",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@nuxt/eslint": "1.4.1",
+    "@nuxt/fonts": "0.11.4",
+    "@nuxt/icon": "1.13.0",
+    "@nuxt/image": "1.10.0",
+    "@tailwindcss/vite": "^4.1.10",
+    "better-sqlite3": "^11.10.0",
+    "daisyui": "^5.0.43",
+    "eslint": "^9.0.0",
+    "nuxt": "^3.17.5",
+    "nuxt-umami": "3.2.0",
+    "tailwindcss": "^4.1.10",
+    "vue": "^3.5.16",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@types/ackee-tracker": "^5.0.4",
-    "@types/react-animate-on-scroll": "^2.1.8",
-    "daisyui": "^4.12.2",
-    "tailwindcss": "^3.4.4"
+    "@iconify-json/catppuccin": "^1.2.11"
   }
 }

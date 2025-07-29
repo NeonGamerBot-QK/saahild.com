@@ -1,0 +1,25 @@
+Hi im saahil (also known as Neon, neongamerbot)
+
+I own saahild.com which can be verified by running:
+dig -t txt +short _canary_verf.saahild.com
+
+which will return: ownedbyneon
+
+I am alive with a beating heart and am not a robot.
+
+I am under the control of the PGP key with the fingerprint: FDE995C28C7EE56337643A768A8B64515254CFC6
+
+You can fetch my key by running:
+gpg --keyserver hkps://keys.openpgp.org --recv-keys FDE995C28C7EE56337643A768A8B64515254CFC6
+
+You can also find it on https://saahild.com/creds/public.pgp.txt
+
+Today is June 30th 2025.
+
+I will attempt to reverify this message within the next 90 days.
+This message is signed with my PGP key. You can verify it by running:
+
+gpg --keyserver hkps://keys.openpgp.org --recv-keys FDE995C28C7EE56337643A768A8B64515254CFC6
+gpg --verify canary.txt
+
+It should return with "Good signature" proving this message is valid and not tampered with.
