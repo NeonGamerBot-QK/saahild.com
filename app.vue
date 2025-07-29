@@ -45,11 +45,11 @@ useHead({
       rel: "me",
       href: "https://mastodon.social/@neongamerbot",
     },
-      {
-      rel: 'icon',
-      type: 'image/x-icon',
-      href: '/neonspfp.png',
-    }
+    {
+      rel: "icon",
+      type: "image/x-icon",
+      href: "/neonspfp.png",
+    },
   ],
   noscript: [
     {
