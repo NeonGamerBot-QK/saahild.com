@@ -31,6 +31,11 @@ let ring = [
     friend: true,
   },
   {
+friend: true,
+src: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/bd5da0354c32c51999762090620db6946b2a3714_image.png",
+link: `https://aram.sh/`
+}
+  {
     friend: true,
     link: `https://junyali.github.io/`,
     src: "junya.png",
