@@ -1,6 +1,5 @@
 <script setup>
 let ring = [
-  
   {
     src: "alexp.png",
     link: "https://parkalex.dev/",
