@@ -1,5 +1,21 @@
 <script setup>
 let ring = [
+  
+  {
+    src: "alexp.png",
+    link: "https://parkalex.dev/",
+    friend: true,
+  },
+  {
+    src: "temp_3kh0.png",
+    link: "https://3kh0.net",
+    friend: true,
+  },
+  {
+    src: "mahad.png",
+    link: "https://skyfall.dev",
+    friend: true,
+  },
   {
     src: "foxmossbutton.png",
     link: "https://foxmoss.com/",
@@ -13,16 +29,6 @@ let ring = [
   {
     src: "bomberfish.gif",
     link: "https://bomberfish.ca/",
-    friend: true,
-  },
-  {
-    src: "alexp.png",
-    link: "https://parkalex.dev/",
-    friend: true,
-  },
-  {
-    src: "temp_3kh0.png",
-    link: "https://3kh0.net",
     friend: true,
   },
   {
