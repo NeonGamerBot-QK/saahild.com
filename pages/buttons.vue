@@ -46,6 +46,11 @@ let ring = [
     src: "junya.png",
   },
   {
+    friend: true,
+    link: `https://lumentae.dev/`,
+    src: "lumentae.gif",
+  },
+  {
     src: "3295d8e539f4804202871ce068f91b9a.gif",
   },
   {
