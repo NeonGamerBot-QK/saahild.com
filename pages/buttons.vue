@@ -11,6 +11,16 @@ let ring = [
     friend: true,
   },
   {
+    src: "ivie.png",
+    link: "https://ivie.codes/",
+    friend: true,
+  },
+  {
+    src: "lynn.png",
+    link: "https://lynn.pt/",
+    friend: true,
+  },
+  {
     src: "mahad.png",
     link: "https://skyfall.dev",
     friend: true,
