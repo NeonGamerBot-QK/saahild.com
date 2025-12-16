@@ -27,8 +27,8 @@ let ring = [
   },
   {
     src: "froppi.gif",
-    link:"https://froppii.dev",
-    friend: true
+    link: "https://froppii.dev",
+    friend: true,
   },
   {
     src: "foxmossbutton.png",
