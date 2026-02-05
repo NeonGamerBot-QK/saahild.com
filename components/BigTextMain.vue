@@ -1,5 +1,12 @@
 <script setup>
 let spotify_link = `https://spotify-github-profile.kittinanx.com/api/view?uid=saahil.d&cover_image=true&theme=default&show_offline=true&background_color=121212&interchange=false&bar_color=b6494d&bar_color_cover=true`;
+
+/**
+ * Tracks Spotify widget load event for analytics.
+ */
+function onSpotifyLoad() {
+  umTrackEvent("widget_view", { widget: "spotify_profile" });
+}
 </script>
 <template>
   <div class="flex items-center justify-between md:mt-20 md:px-20 mt-10 px-10">
@@ -68,6 +75,7 @@ let spotify_link = `https://spotify-github-profile.kittinanx.com/api/view?uid=sa
         :src="spotify_link"
         alt="Saahil's Spotify"
         class="mt-5 hidden md:block"
+        @load="onSpotifyLoad"
       />
     </div>
   </div>

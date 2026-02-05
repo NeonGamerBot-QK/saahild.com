@@ -24,8 +24,17 @@
           </span>
         </div>
         <div class="card-actions justify-end">
-          <!-- <button class="btn btn-primary">View</button> -->
-          <a :href="project.repo" target="_blank" class="btn btn-primary"
+          <a
+            :href="project.repo"
+            target="_blank"
+            class="btn btn-primary"
+            @click="
+              umTrackEvent('project_click', {
+                projectId: project.id,
+                title: project.title,
+                action: 'repo',
+              })
+            "
             ><Icon name="catppuccin:git" class="text-2xl" />
           </a>
           <a
@@ -33,6 +42,13 @@
             :href="project.demoURL"
             target="_blank"
             class="btn btn-secondary"
+            @click="
+              umTrackEvent('project_click', {
+                projectId: project.id,
+                title: project.title,
+                action: 'demo',
+              })
+            "
             ><Icon name="catppuccin:azure-pipelines" class="text-2xl"
           /></a>
         </div>

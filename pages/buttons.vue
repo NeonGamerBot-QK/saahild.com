@@ -209,6 +209,14 @@ function randomStyle() {
         :class="`p-0 m-1 ${item.friend ? 'border-[#cba6f7] border-3 animate-bounce' : ''}`"
         :style="randomStyle()"
         :href="item.link || '#'"
+        @click="
+          item.link &&
+            umTrackEvent('button_click', {
+              kind: item.friend ? 'friend' : 'button',
+              domain: item.link ? new URL(item.link).hostname : null,
+              src: item.src.startsWith('http') ? 'remote' : 'local',
+            })
+        "
       >
         <img
           :src="
@@ -237,6 +245,12 @@ function randomStyle() {
       <a
         href="https://ctp-webr.ing/neon/previous"
         className="font-bold absolute right-40"
+        @click="
+          umTrackEvent('webring_click', {
+            action: 'prev',
+            webring: 'ctp-webr.ing',
+          })
+        "
       >
         &larr;
       </a>
@@ -244,6 +258,12 @@ function randomStyle() {
         href="https://ctp-webr.ing/"
         className="inline-flex"
         style="width: 48px"
+        @click="
+          umTrackEvent('webring_click', {
+            action: 'home',
+            webring: 'ctp-webr.ing',
+          })
+        "
       >
         <img
           className="size-8 h-8 w-8 "
