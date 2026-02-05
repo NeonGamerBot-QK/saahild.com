@@ -70,6 +70,11 @@ let ring = [
     src: "lumentae.gif",
   },
   {
+    friend: true, 
+    link: "https://aconlin.com/",
+    src: "acon.gif"
+  },
+  {
     src: "3295d8e539f4804202871ce068f91b9a.gif",
   },
   {
