@@ -26,6 +26,15 @@ let ring = [
     friend: true,
   },
   {
+    src: "froppi.gif",
+    link: "https://froppii.dev/",
+    friend: true,
+  }, {
+    src: "vic.png",
+    link: "https://v1c.rocks/",
+    friend: true,
+  },
+  {
     src: "foxmossbutton.png",
     link: "https://foxmoss.com/",
     friend: true,
@@ -47,7 +56,7 @@ let ring = [
   },
   {
     friend: true,
-    src: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/bd5da0354c32c51999762090620db6946b2a3714_image.png",
+    src: "https://user-cdn.hackclub-assets.com/019c2577-9abb-7d10-9a0e-15e0365e49e0/bd5da0354c32c51999762090620db6946b2a3714_image.png",
     link: `https://aram.sh/`,
   },
   {
