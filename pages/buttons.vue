@@ -29,7 +29,8 @@ let ring = [
     src: "froppi.gif",
     link: "https://froppii.dev/",
     friend: true,
-  }, {
+  },
+  {
     src: "vic.png",
     link: "https://v1c.rocks/",
     friend: true,
@@ -70,9 +71,9 @@ let ring = [
     src: "lumentae.gif",
   },
   {
-    friend: true, 
+    friend: true,
     link: "https://aconlin.com/",
-    src: "acon.gif"
+    src: "acon.gif",
   },
   {
     src: "3295d8e539f4804202871ce068f91b9a.gif",
@@ -225,11 +226,11 @@ function randomStyle() {
         :href="item.link || '#'"
         @click="
           item.link &&
-            umTrackEvent('button_click', {
-              kind: item.friend ? 'friend' : 'button',
-              domain: item.link ? new URL(item.link).hostname : null,
-              src: item.src.startsWith('http') ? 'remote' : 'local',
-            })
+          umTrackEvent('button_click', {
+            kind: item.friend ? 'friend' : 'button',
+            domain: item.link ? new URL(item.link).hostname : null,
+            src: item.src.startsWith('http') ? 'remote' : 'local',
+          })
         "
       >
         <img
