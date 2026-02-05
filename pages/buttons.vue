@@ -26,6 +26,15 @@ let ring = [
     friend: true,
   },
   {
+    src: "froppi.gif",
+    link: "https://froppii.dev/",
+    friend: true,
+  }, {
+    src: "vic.png",
+    link: "https://v1c.rocks/",
+    friend: true,
+  },
+  {
     src: "foxmossbutton.png",
     link: "https://foxmoss.com/",
     friend: true,
@@ -47,7 +56,7 @@ let ring = [
   },
   {
     friend: true,
-    src: "https://hc-cdn.hel1.your-objectstorage.com/s/v3/bd5da0354c32c51999762090620db6946b2a3714_image.png",
+    src: "https://user-cdn.hackclub-assets.com/019c2577-9abb-7d10-9a0e-15e0365e49e0/bd5da0354c32c51999762090620db6946b2a3714_image.png",
     link: `https://aram.sh/`,
   },
   {
@@ -59,6 +68,11 @@ let ring = [
     friend: true,
     link: `https://lumentae.dev/`,
     src: "lumentae.gif",
+  },
+  {
+    friend: true, 
+    link: "https://aconlin.com/",
+    src: "acon.gif"
   },
   {
     src: "3295d8e539f4804202871ce068f91b9a.gif",
@@ -209,6 +223,14 @@ function randomStyle() {
         :class="`p-0 m-1 ${item.friend ? 'border-[#cba6f7] border-3 animate-bounce' : ''}`"
         :style="randomStyle()"
         :href="item.link || '#'"
+        @click="
+          item.link &&
+            umTrackEvent('button_click', {
+              kind: item.friend ? 'friend' : 'button',
+              domain: item.link ? new URL(item.link).hostname : null,
+              src: item.src.startsWith('http') ? 'remote' : 'local',
+            })
+        "
       >
         <img
           :src="
@@ -237,6 +259,12 @@ function randomStyle() {
       <a
         href="https://ctp-webr.ing/neon/previous"
         className="font-bold absolute right-40"
+        @click="
+          umTrackEvent('webring_click', {
+            action: 'prev',
+            webring: 'ctp-webr.ing',
+          })
+        "
       >
         &larr;
       </a>
@@ -244,6 +272,12 @@ function randomStyle() {
         href="https://ctp-webr.ing/"
         className="inline-flex"
         style="width: 48px"
+        @click="
+          umTrackEvent('webring_click', {
+            action: 'home',
+            webring: 'ctp-webr.ing',
+          })
+        "
       >
         <img
           className="size-8 h-8 w-8 "
