@@ -105,9 +105,9 @@ let ring = [
   {
     src: "1cb7a342492654ef51557ed1e062b27a.gif",
   },
-  {
-    src: "3aa04774fa5151af0bd475a6ca85aac1.gif",
-  },
+//  {
+//    src: "3aa04774fa5151af0bd475a6ca85aac1.gif",
+//  },
   {
     src: "2b6fce503527ec98ab2e671368e4972f.png",
   },
@@ -120,21 +120,21 @@ let ring = [
   {
     src: "179523bb11e45538e1f86e638c1fb100.gif",
   },
-  {
-    src: "2a56fd4c7a1572ca12a5d576e048ef51.gif",
-  },
-  {
-    src: "cc34d54961941d7dfe96543eb5ffb0a3.gif",
-  },
+//  {
+//    src: "2a56fd4c7a1572ca12a5d576e048ef51.gif",
+//  },
+//  {
+//    src: "cc34d54961941d7dfe96543eb5ffb0a3.gif",
+//  },
   {
     src: "f6a41b3db69855d67ca3b71a71c77084.gif",
   },
-  {
-    src: "19fc1abb7ef7a1a11c3c5482831566ae.gif",
-  },
-  {
-    src: "9f8ab115ef02930271169683bf610e5c.gif",
-  },
+ // {
+ //   src: "19fc1abb7ef7a1a11c3c5482831566ae.gif",
+ // },
+ // {
+ //   src: "9f8ab115ef02930271169683bf610e5c.gif",
+ // },
   {
     src: "vibri-button.gif",
   },
@@ -156,9 +156,9 @@ let ring = [
   {
     src: "30f0d5532eea43b10464e4c927b16ba4.png",
   },
-  {
-    src: "fbbbb6b4a3f54f35ab8fac40d9aa6b7c.png",
-  },
+//  {
+//    src: "fbbbb6b4a3f54f35ab8fac40d9aa6b7c.png",
+//  },
   {
     src: "61fcab82536020d630a360055c830eb1.png",
   },
@@ -171,18 +171,19 @@ let ring = [
   {
     src: "df6ddc19c1214b2b4909ad730e55ab09.gif",
   },
-  {
+/*  {
     src: "bec485b9ceb26cd372fa51ad7a8b6962.gif",
   },
   {
     src: "a1b70ea20aa89370a2f0d48f2c1bcb0e.gif",
   },
+  */
   {
     src: "dd2cff4f815d9f10f7d762b9989439de.gif",
   },
-  {
-    src: "d6ffa37f50d94295ee720640caaa6410.gif",
-  },
+//  {
+//    src: "d6ffa37f50d94295ee720640caaa6410.gif",
+//  },
   {
     src: "ed2b8b6877008883d804f0ac95aa8769.gif",
   },
